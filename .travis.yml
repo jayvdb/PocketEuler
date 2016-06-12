@@ -1,0 +1,7 @@
+language: ruby
+install:
+  - gem install mdl
+  - npm install -g markdownlint-cli
+script:
+  - mdl -c ./.mdlrc README.md
+  - markdownlint -c ./.markdownlint.json README.md

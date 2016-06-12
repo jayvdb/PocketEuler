@@ -1,0 +1,16 @@
+rules "~MD003,~MD005,~MD006,~MD007,~MD009,~MD010,~MD012,~MD013,~MD025,~MD029,~MD033"
+
+# MD003 Header style
+# MD005 Inconsistent indentation for list items at the same level
+# MD006 Consider starting bulleted lists at the beginning of the line
+# MD007 Unordered list indentation
+# MD009 Trailing spaces
+# MD012 Multiple consecutive blank lines
+# MD013 Line length
+# MD025 Multiple top level headers in the same document
+# MD029 Ordered list item prefix
+# MD033 Inline HTML
+
+rule 'MD007', :indent => 1
+rule 'MD029', :style => :ordered
+
