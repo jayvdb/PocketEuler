@@ -427,15 +427,15 @@ Problem 19
 You are given the following information, but you may prefer to do some
 research for yourself.
 
-     • 1 Jan 1900 was a Monday.
-     • Thirty days has September,
-       April, June and November.
-       All the rest have thirty-one,
-       Saving February alone,
-       Which has twenty-eight, rain or shine.
-       And on leap years, twenty-nine.
-     • A leap year occurs on any year evenly divisible by 4, but not on a
-       century unless it is divisible by 400.
+* 1 Jan 1900 was a Monday.
+* Thirty days has September,
+  April, June and November.
+  All the rest have thirty-one,
+  Saving February alone,
+  Which has twenty-eight, rain or shine.
+  And on leap years, twenty-nine.
+* A leap year occurs on any year evenly divisible by 4, but not on a
+  century unless it is divisible by 400.
 
 How many Sundays fell on the first of the month during the twentieth
 century (1 Jan 1901 to 31 Dec 2000)?
@@ -863,26 +863,25 @@ Answer: 82aa4b0af34c2313a562076992e50aa3
 Problem 43
 ==========
 
+The number, 1406357289, is a 0 to 9 pandigital number because it is made
+up of each of the digits 0 to 9 in some order, but it also has a rather
+interesting sub-string divisibility property.
 
-   The number, 1406357289, is a 0 to 9 pandigital number because it is made
-   up of each of the digits 0 to 9 in some order, but it also has a rather
-   interesting sub-string divisibility property.
+Let d[1] be the 1st digit, d[2] be the 2nd digit, and so on. In this
+way, we note the following:
 
-   Let d[1] be the 1st digit, d[2] be the 2nd digit, and so on. In this
-   way, we note the following:
+- d[2]d[3]d[4]=406 is divisible by 2
+- d[3]d[4]d[5]=063 is divisible by 3
+- d[4]d[5]d[6]=635 is divisible by 5
+- d[5]d[6]d[7]=357 is divisible by 7
+- d[6]d[7]d[8]=572 is divisible by 11
+- d[7]d[8]d[9]=728 is divisible by 13
+- d[8]d[9]d[10]=289 is divisible by 17
 
-     • d[2]d[3]d[4]=406 is divisible by 2
-     • d[3]d[4]d[5]=063 is divisible by 3
-     • d[4]d[5]d[6]=635 is divisible by 5
-     • d[5]d[6]d[7]=357 is divisible by 7
-     • d[6]d[7]d[8]=572 is divisible by 11
-     • d[7]d[8]d[9]=728 is divisible by 13
-     • d[8]d[9]d[10]=289 is divisible by 17
+Find the sum of all 0 to 9 pandigital numbers with this property.
 
-   Find the sum of all 0 to 9 pandigital numbers with this property.
 
-   
-   Answer: 115253b7721af0fdff25cd391dfc70cf
+Answer: 115253b7721af0fdff25cd391dfc70cf
 
 
 Problem 44
@@ -5765,10 +5764,10 @@ Problem 236
 
    The suppliers compare their performance using two types of statistic:
 
-     • The five per-product spoilage rates for each supplier are equal to the
+     * The five per-product spoilage rates for each supplier are equal to the
        number of products gone bad divided by the number of products
        supplied, for each of the five products in turn.
-     • The overall spoilage rate for each supplier is equal to the total
+     * The overall spoilage rate for each supplier is equal to the total
        number of products gone bad divided by the total number of products
        provided by that supplier.
 
@@ -6361,8 +6360,8 @@ Problem 258
 
    A sequence is defined as:
 
-     • g[k] = 1, for 0 ≤ k ≤ 1999
-     • g[k] = g[k-2000] + g[k-1999], for k ≥ 2000.
+     * g[k] = 1, for 0 ≤ k ≤ 1999
+     * g[k] = g[k-2000] + g[k-1999], for k ≥ 2000.
 
    Find g[k] mod 20092010 for k = 10^18.
 
@@ -6377,14 +6376,14 @@ Problem 259
    A positive integer will be called reachable if it can result from an
    arithmetic expression obeying the following rules:
 
-     • Uses the digits 1 through 9, in that order and exactly once each.
-     • Any successive digits can be concatenated (for example, using the
+     * Uses the digits 1 through 9, in that order and exactly once each.
+     * Any successive digits can be concatenated (for example, using the
        digits 2, 3 and 4 we obtain the number 234).
-     • Only the four usual binary arithmetic operations (addition,
+     * Only the four usual binary arithmetic operations (addition,
        subtraction, multiplication and division) are allowed.
-     • Each operation can be used any number of times, or not at all.
-     • Unary minus is not allowed.
-     • Any number of (possibly nested) parentheses may be used to define the
+     * Each operation can be used any number of times, or not at all.
+     * Unary minus is not allowed.
+     * Any number of (possibly nested) parentheses may be used to define the
        order of operations.
 
    For example, 42 is reachable, since `(1/23) * ((4*5)-6) * (78-9)` = 42.
@@ -6406,9 +6405,9 @@ Problem 260
 
    In other words, the player chooses some N>0 and removes:
 
-     • N stones from any single pile; or
-     • N stones from each of any two piles (2N total); or
-     • N stones from each of the three piles (3N total).
+     * N stones from any single pile; or
+     * N stones from each of any two piles (2N total); or
+     * N stones from each of the three piles (3N total).
 
    The player taking the last stone(s) wins the game.
 
@@ -6445,10 +6444,10 @@ Problem 261
 
    Some small square-pivots are
 
-     • 4: 3^2 + 4^2 = 5^2
-     • 21: 20^2 + 21^2 = 29^2
-     • 24: 21^2 + 22^2 + 23^2 + 24^2 = 25^2 + 26^2 + 27^2
-     • 110: 108^2 + 109^2 + 110^2 = 133^2 + 134^2
+     * 4: 3^2 + 4^2 = 5^2
+     * 21: 20^2 + 21^2 = 29^2
+     * 24: 21^2 + 22^2 + 23^2 + 24^2 = 25^2 + 26^2 + 27^2
+     * 110: 108^2 + 109^2 + 110^2 = 133^2 + 134^2
 
    Find the sum of all distinct square-pivots ≤ 10^10.
 
@@ -6509,8 +6508,8 @@ Problem 263
 
    We shall call a number n such that :
 
-     • (n-9, n-3), (n-3,n+3), (n+3, n+9) form a triple-pair, and
-     • the numbers n-8, n-4, n, n+4 and n+8 are all practical,
+     * (n-9, n-3), (n-3,n+3), (n+3, n+9) form a triple-pair, and
+     * the numbers n-8, n-4, n, n+4 and n+8 are all practical,
 
    an engineers’ paradise.
 
@@ -6525,9 +6524,9 @@ Problem 264
 
 Consider all the triangles having:
 
-• All their vertices on lattice points.
-• Circumcentre at the origin O.
-• Orthocentre at the point H(5, 0).
+* All their vertices on lattice points.
+* Circumcentre at the origin O.
+* Orthocentre at the point H(5, 0).
 
 There are nine such triangles having a perimeter ≤ 50.
 Listed and shown in ascending order of their perimeter, they are:
@@ -7164,10 +7163,10 @@ Problem 292
    We shall define a pythagorean polygon to be a convex polygon with the
    following properties:
 
-     • there are at least three vertices,
-     • no three vertices are aligned,
-     • each vertex has integer coordinates,
-     • each edge has integer length.
+     * there are at least three vertices,
+     * no three vertices are aligned,
+     * each vertex has integer coordinates,
+     * each edge has integer length.
 
    For a given integer n, define P(n) as the number of distinct pythagorean
    polygons for which the perimeter is ≤ n.
@@ -7215,8 +7214,8 @@ Problem 294
    For a positive integer n, define S(n) as the number of positive integers k
    < 10^n with the following properties :
 
-     • k is divisible by 23 and
-     • d(k) = 23.
+     * k is divisible by 23 and
+     * d(k) = 23.
 
    You are given that S(9) = 263626 and S(42) = 6377168878570056.
 
@@ -7232,9 +7231,9 @@ Problem 295
 
    We call the convex area enclosed by two circles a lenticular hole if:
 
-     • The centres of both circles are on lattice points.
-     • The two circles intersect at two distinct lattice points.
-     • The interior of the convex area enclosed by both circles does not
+     * The centres of both circles are on lattice points.
+     * The two circles intersect at two distinct lattice points.
+     * The interior of the convex area enclosed by both circles does not
        contain any lattice points.
 
    Consider the circles:
@@ -7427,19 +7426,19 @@ turn to remove any number of stones from any heap until no stones remain.
 We'll consider the three-heap normal-play version of Nim, which works as
 follows:
 
-• At the start of the game there are three heaps of stones.
-• On his turn the player removes any positive number of stones from any
+* At the start of the game there are three heaps of stones.
+* On his turn the player removes any positive number of stones from any
   single heap.
-• The first player unable to move (because no stones remain) loses.
+* The first player unable to move (because no stones remain) loses.
 
 If (n[1],n[2],n[3]) indicates a Nim position consisting of heaps of size
 n[1], n[2] and n[3] then there is a simple function X(n[1],n[2],n[3]) —
 that you may look up or attempt to deduce for yourself — that returns:
 
- • zero if, with perfect strategy, the player about to move will
-   eventually lose; or
- • non-zero if, with perfect strategy, the player about to move will
-   eventually win.
+* zero if, with perfect strategy, the player about to move will
+  eventually lose; or
+* non-zero if, with perfect strategy, the player about to move will
+  eventually win.
 
 For example X(1,2,3) = 0 because, no matter what the current player does,
 his opponent can respond with a move that leaves two heaps of equal size,
@@ -7447,10 +7446,10 @@ at which point every move by the current player can be mirrored by his
 opponent until no stones remain; so the current player loses. To
 illustrate:
 
-• current player moves to (1,2,1)
-• opponent moves to (1,0,1)
-• current player moves to (0,0,1)
-• opponent moves to (0,0,0), and so wins.
+* current player moves to (1,2,1)
+* opponent moves to (1,0,1)
+* current player moves to (0,0,1)
+* opponent moves to (0,0,0), and so wins.
 
 For how many positive integers n ≤ 2^30 does X(n,2n,3n) = 0 ?
 
@@ -8031,8 +8030,8 @@ Let y[0], y[1], y[2],... be a sequence of random unsigned 32 bit integers
 
 For the sequence x[i] the following recursion is given:
 
-     • x[0] = 0 and
-     • x[i] = x[i-1] | y[i-1], for i > 0. ( | is the bitwise-OR operator)
+     * x[0] = 0 and
+     * x[i] = x[i-1] | y[i-1], for i > 0. ( | is the bitwise-OR operator)
 
 It can be seen that eventually there will be an index N such that x[i] =
 2^32 -1 (a bit-pattern of all ones) for all i ≥ N.
@@ -8475,8 +8474,8 @@ Problem 337
 
 Let {a[1], a[2],..., a[n]} be an integer sequence of length n such that:
 
-     • a[1] = 6
-     • for all 1 ≤ i < n : φ(a[i]) < φ(a[i+1]) < a[i] < a[i+1] ^1
+     * a[1] = 6
+     * for all 1 ≤ i < n : φ(a[i]) < φ(a[i+1]) < a[i] < a[i+1] ^1
 
 Let S(N) be the number of such sequences with a[n] ≤ N.
 For example, S(10) = 4: {6}, {6, 8}, {6, 8, 9} and {6, 10}.
@@ -8854,18 +8853,18 @@ Problem 352
    group, the 5 samples are mixed together and a single test is performed.
    Then,
 
-     • If the result is negative, all the sheep in that group are deemed to
+     * If the result is negative, all the sheep in that group are deemed to
        be virus-free.
-     • If the result is positive, 5 additional tests will be performed (a
+     * If the result is positive, 5 additional tests will be performed (a
        separate test for each animal) to determine the affected
        individual(s).
 
    Since the probability of infection for any specific animal is only 0.02,
    the first test (on the pooled samples) for each group will be:
 
-     • Negative (and no more tests needed) with probability 0.98^5 =
+     * Negative (and no more tests needed) with probability 0.98^5 =
        0.9039207968.
-     • Positive (5 additional tests needed) with probability 1 - 0.9039207968
+     * Positive (5 additional tests needed) with probability 1 - 0.9039207968
        = 0.0960792032.
 
    Thus, the expected number of tests for each group is 1 + 0.0960792032 × 5
@@ -8879,14 +8878,14 @@ Problem 352
    sufficiently sensitive and that there are no adverse effects caused by
    mixing different samples). E.g.:
 
-     • We may start by running a test on a mixture of all the 25 samples. It
+     * We may start by running a test on a mixture of all the 25 samples. It
        can be verified that in about 60.35% of the cases this test will be
        negative, thus no more tests will be needed. Further testing will only
        be required for the remaining 39.65% of the cases.
-     • If we know that at least one animal in a group of 5 is infected and
+     * If we know that at least one animal in a group of 5 is infected and
        the first 4 individual tests come out negative, there is no need to
        run a test on the fifth animal (we know that it must be infected).
-     • We can try a different number of groups / different number of animals
+     * We can try a different number of groups / different number of animals
        in each group, adjusting those numbers at each level so that the total
        expected number of tests will be minimised.
 
@@ -9517,13 +9516,13 @@ Problem 376
    We wish to investigate how many sets of nontransitive dice exist. We will
    assume the following conditions:
 
-     • There are three six-sided dice with each side having between 1 and N
+     * There are three six-sided dice with each side having between 1 and N
        pips, inclusive.
-     • Dice with the same set of pips are equal, regardless of which side on
+     * Dice with the same set of pips are equal, regardless of which side on
        the die the pips are located.
-     • The same pip value may appear on multiple dice; if both players roll
+     * The same pip value may appear on multiple dice; if both players roll
        the same value neither player wins.
-     • The sets of dice {A,B,C}, {B,C,A} and {C,A,B} are the same set.
+     * The sets of dice {A,B,C}, {B,C,A} and {C,A,B} are the same set.
 
    For N = 7 we find there are 9780 such sets.
    How many are there for N = 30 ?
@@ -9644,9 +9643,9 @@ Problem 382
 
    A set S of positive numbers is said to generate a polygon P if:
 
-     • no two sides of P are the same length,
-     • the length of every side of P is in S, and
-     • S contains no other value.
+     * no two sides of P are the same length,
+     * the length of every side of P is in S, and
+     * S contains no other value.
 
    For example:
    The set {3, 4, 5} generates a polygon with sides 3, 4, and 5 (a triangle).
@@ -9656,8 +9655,8 @@ Problem 382
 
    Consider the sequence s, defined as follows:
 
-     • s[1] = 1, s[2] = 2, s[3] = 3
-     • s[n] = s[n-1] + s[n-3] for n > 3.
+     * s[1] = 1, s[2] = 2, s[3] = 3
+     * s[n] = s[n-1] + s[n-3] for n > 3.
 
    Let U[n] be the set {s[1], s[2], ..., s[n]}. For example, U[10] = {1, 2,
    3, 4, 6, 9, 13, 19, 28, 41}.
@@ -9919,15 +9918,15 @@ Problem 392
    Consider rectilinear grids in the Cartesian coordinate system with the
    following properties:
 
-     • The gridlines are parallel to the axes of the Cartesian coordinate
+     * The gridlines are parallel to the axes of the Cartesian coordinate
        system.
-     • There are N+2 vertical and N+2 horizontal gridlines. Hence there are
+     * There are N+2 vertical and N+2 horizontal gridlines. Hence there are
        (N+1) x (N+1) rectangular cells.
-     • The equations of the two outer vertical gridlines are x = -1 and x =
+     * The equations of the two outer vertical gridlines are x = -1 and x =
        1.
-     • The equations of the two outer horizontal gridlines are y = -1 and y =
+     * The equations of the two outer horizontal gridlines are y = -1 and y =
        1.
-     • The grid cells are colored red if they overlap with the unit circle,
+     * The grid cells are colored red if they overlap with the unit circle,
        black otherwise.
 
    For this problem we would like you to find the postions of the remaining N
@@ -10033,18 +10032,18 @@ Problem 396
    For any positive integer n, the nth weak Goodstein sequence {g[1], g[2],
    g[3], ...} is defined as:
 
-     • g[1] = n
-     • for k > 1, g[k] is obtained by writing g[k-1] in base k, interpreting
+     * g[1] = n
+     * for k > 1, g[k] is obtained by writing g[k-1] in base k, interpreting
        it as a base k + 1 number, and subtracting 1.
 
    The sequence terminates when g[k] becomes 0.
 
    For example, the 6th weak Goodstein sequence is {6, 11, 17, 25, ...}:
 
-     • g[1] = 6.
-     • g[2] = 11 since 6 = 110[2], 110[3] = 12, and 12 - 1 = 11.
-     • g[3] = 17 since 11 = 102[3], 102[4] = 18, and 18 - 1 = 17.
-     • g[4] = 25 since 17 = 101[4], 101[5] = 26, and 26 - 1 = 25.
+     * g[1] = 6.
+     * g[2] = 11 since 6 = 110[2], 110[3] = 12, and 12 - 1 = 11.
+     * g[3] = 17 since 11 = 102[3], 102[4] = 18, and 18 - 1 = 17.
+     * g[4] = 25 since 17 = 101[4], 101[5] = 26, and 26 - 1 = 25.
 
    and so on.
 
@@ -10141,9 +10140,9 @@ Problem 400
 
    A Fibonacci tree is a binary tree recursively defined as:
 
-     • T(0) is the empty tree.
-     • T(1) is the binary tree with only one node.
-     • T(k) consists of a root node that has T(k-1) and T(k-2) as children.
+     * T(0) is the empty tree.
+     * T(1) is the binary tree with only one node.
+     * T(k) consists of a root node that has T(k-1) and T(k-2) as children.
 
    On such a tree two players play a take-away game. On each turn a player
    selects a node and removes that node along with the subtree rooted at that
@@ -10285,11 +10284,11 @@ Problem 406
    {1, 2, ..., n} by asking questions. Each number (question) we ask, we get
    one of three possible answers:
 
-     • "Your guess is lower than the hidden number" (and you incur a cost of
+     * "Your guess is lower than the hidden number" (and you incur a cost of
        a), or
-     • "Your guess is higher than the hidden number" (and you incur a cost of
+     * "Your guess is higher than the hidden number" (and you incur a cost of
        b), or
-     • "Yes, that's it!" (and the game ends).
+     * "Yes, that's it!" (and the game ends).
 
    Given the value of n, a, and b, an optimal strategy minimizes the total
    cost for the worst possible case.
@@ -10377,9 +10376,9 @@ Problem 409
 
    Let n be a positive integer. Consider nim positions where:
 
-     • There are n non-empty piles.
-     • Each pile has size less than 2^n.
-     • No two piles have the same size.
+     * There are n non-empty piles.
+     * Each pile has size less than 2^n.
+     * No two piles have the same size.
 
    Let W(n) be the number of winning nim positions satisfying the
    aboveconditions (a position is winning if the first player has a winning
@@ -10517,8 +10516,8 @@ Problem 414
    Define C[b] to be the Kaprekar constant in base b for 5 digits.Define the
    function sb(i) to be
 
-     • 0 if i = C[b] or if i written in base b consists of 5 identical digits
-     • the number of iterations it takes the Kaprekar routine in base b to
+     * 0 if i = C[b] or if i written in base b consists of 5 identical digits
+     * the number of iterations it takes the Kaprekar routine in base b to
        arrive at C[b], otherwise
 
    Note that we can define sb(i) for all integers i < b^5. If i written in
@@ -10624,8 +10623,8 @@ Problem 418
    Let n be a positive integer. An integer triple (a, b, c) is called a
    factorisation triple of n if:
 
-     • 1 ≤ a ≤ b ≤ c
-     • a·b·c = n.
+     * 1 ≤ a ≤ b ≤ c
+     * a·b·c = n.
 
    Define f(n) to be a + b + c for the factorisation triple (a, b, c) of n
    which minimises c / a. One can show that this triple is unique.
@@ -10717,9 +10716,9 @@ Problem 422
 
    Now we define a sequence of points in H, {P[i] : i ≥ 1}, as:
 
-     • P[1] = (13, 61/4).
-     • P[2] = (-43/6, -4).
-     • For i > 2, P[i] is the unique point in H that is different from P[i-1]
+     * P[1] = (13, 61/4).
+     * P[2] = (-43/6, -4).
+     * For i > 2, P[i] is the unique point in H that is different from P[i-1]
        and such that line P[i]P[i-1] is parallel to line P[i-2]X. It can be
        shown that P[i] is well-defined, and that its coordinates are always
        rational.
@@ -10883,9 +10882,9 @@ evolves to [1, 2, 3]; we shall call this the final state.
 
 We define the sequence {t[i]}:
 
- • s[0] = 290797
- • s[k+1] = s[k]^2 mod 50515093
- • t[k] = (s[k] mod 64) + 1
+* s[0] = 290797
+* s[k+1] = s[k]^2 mod 50515093
+* t[k] = (s[k] mod 64) + 1
 
 Starting from the initial configuration (t[0], t[1], …, t[10]), the final
 state becomes [1, 3, 10, 24, 51, 75].
@@ -10934,11 +10933,11 @@ Problem 428
    The triplet (a, b, c) is called a necklace triplet if you can place k ≥ 3
    distinct circles C[1], C[2], ..., C[k] such that:
 
-     • C[i] has no common interior points with any C[j] for 1 ≤ i, j ≤ k and
+     * C[i] has no common interior points with any C[j] for 1 ≤ i, j ≤ k and
        i ≠ j,
-     • C[i] is tangent to both C[in] and C[out] for 1 ≤ i ≤ k,
-     • C[i] is tangent to C[i+1] for 1 ≤ i < k, and
-     • C[k] is tangent to C[1].
+     * C[i] is tangent to both C[in] and C[out] for 1 ≤ i ≤ k,
+     * C[i] is tangent to C[i+1] for 1 ≤ i < k, and
+     * C[k] is tangent to C[1].
 
    For example, (5, 5, 5) and (4, 3, 21) are necklace triplets, while it can
    be shown that (2, 2, 5) is not.
@@ -11215,8 +11214,8 @@ Problem 438
 
    Consider the following two conditions:
 
-     • x[1], ..., x[n] are all real.
-     • If x[1], ..., x[n] are sorted, ⌊x[i]⌋ = i for 1 ≤ i ≤ n. (⌊·⌋: floor
+     * x[1], ..., x[n] are all real.
+     * If x[1], ..., x[n] are sorted, ⌊x[i]⌋ = i for 1 ≤ i ≤ n. (⌊·⌋: floor
        function.)
 
    In the case of n = 4, there are 12 n-tuples of integers which satisfy both
@@ -11282,9 +11281,9 @@ Problem 441
    For an integer M, we define R(M) as the sum of 1/(p·q) for all the integer
    pairs p and q which satisfy all of these conditions:
 
-     • 1 ≤ p < q ≤ M
-     • p + q ≥ M
-     • p and q are coprime.
+     * 1 ≤ p < q ≤ M
+     * p + q ≥ M
+     * p and q are coprime.
 
    We also define S(N) as the sum of R(i) for 2 ≤ i ≤ N.
    We can verify that S(2) = R(2) = 1/2, S(10) ≈ 6.9147 and S(100) ≈ 58.2962.
@@ -11623,10 +11622,10 @@ Problem 455
 
    For example:
 
-     • f(4) = 411728896 (4^411728896 = ...490411728896)
-     • f(10) = 0
-     • f(157) = 743757 (157^743757 = ...567000743757)
-     • Σf(n), 2 ≤ n ≤ 10^3 = 442530011399
+     * f(4) = 411728896 (4^411728896 = ...490411728896)
+     * f(10) = 0
+     * f(157) = 743757 (157^743757 = ...567000743757)
+     * Σf(n), 2 ≤ n ≤ 10^3 = 442530011399
 
    Find Σf(n), 2 ≤ n ≤ 10^6.
 
@@ -11707,9 +11706,9 @@ Problem 459
    A turn consists of flipping all disks in a rectangle with the following
    properties:
 
-     • the upper right corner of the rectangle contains a white disk
-     • the rectangle width is a perfect square (1, 4, 9, 16, ...)
-     • the rectangle height is a triangular number (1, 3, 6, 10, ...)
+     * the upper right corner of the rectangle contains a white disk
+     * the rectangle width is a perfect square (1, 4, 9, 16, ...)
+     * the rectangle height is a triangular number (1, 3, 6, 10, ...)
 
    Players alternate turns. A player wins by turning the grid all black.
 
@@ -11737,8 +11736,8 @@ Problem 460
    to (x[1], y[1]) at a constant velocity v. The value of v depends on y[0]
    and y[1] as follows:
 
-     • If y[0] = y[1], the value of v equals y[0].
-     • If y[0] ≠ y[1], the value of v equals (y[1] - y[0]) / (ln(y[1]) -
+     * If y[0] = y[1], the value of v equals y[0].
+     * If y[0] ≠ y[1], the value of v equals (y[1] - y[0]) / (ln(y[1]) -
        ln(y[0])).
 
    The left image is one of the possible paths for d = 4. First the ant goes
@@ -11822,11 +11821,11 @@ Problem 463
 
    The function $f$ is defined for all positive integers as follows:
 
-     • $f(1)=1$
-     • $f(3)=3$
-     • $f(2n)=f(n)$
-     • $f(4n + 1)=2f(2n + 1) - f(n)$
-     • $f(4n + 3)=3f(2n + 1) - 2f(n)$
+     * $f(1)=1$
+     * $f(3)=3$
+     * $f(2n)=f(n)$
+     * $f(4n + 1)=2f(2n + 1) - f(n)$
+     * $f(4n + 3)=3f(2n + 1) - 2f(n)$
 
    The function $S(n)$ is defined as $\sum_{i=1}^{n}f(i)$.
 
@@ -11844,9 +11843,9 @@ Problem 464
 
    The Möbius function, denoted μ(n), is defined as:
 
-     • μ(n) = (-1)^ω(n) if n is squarefree (where ω(n) is the number of
+     * μ(n) = (-1)^ω(n) if n is squarefree (where ω(n) is the number of
        distinct prime factors of n)
-     • μ(n) = 0 if n is not squarefree.
+     * μ(n) = 0 if n is not squarefree.
 
    Let P(a,b) be the number of integers n in the interval [a,b] such that
    μ(n) = 1.
@@ -11856,9 +11855,9 @@ Problem 464
 
    Let C(n) be the number of integer pairs (a,b) such that:
 
-     • 1 ≤ a ≤ b ≤ n,
-     • 99·N(a,b) ≤ 100·P(a,b), and
-     • 99·P(a,b) ≤ 100·N(a,b).
+     * 1 ≤ a ≤ b ≤ n,
+     * 99·N(a,b) ≤ 100·P(a,b), and
+     * 99·P(a,b) ≤ 100·N(a,b).
 
    For example, C(10) = 13, C(500) = 16676 and C(10 000) = 20155319.
 
