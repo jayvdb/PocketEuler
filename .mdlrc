@@ -1,0 +1,9 @@
+rules "~MD003,~MD009,~MD010,~MD012,~MD013,~MD025,~MD029,~MD033"
+
+# MD012 Multiple consecutive blank lines
+# MD013 Line length
+# MD025 Multiple top level headers in the same document
+# MD033 Inline HTML
+
+rule 'MD029', :style => :ordered
+

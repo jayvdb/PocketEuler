@@ -2,17 +2,17 @@
 
 This is the offline version of [Project Euler](https://projecteuler.net/).
 
-### History
+## History
 
 * Compiled by [Kyle Keen](http://kmkeen.com/local-euler/).
 * Converted to Github Markdown by [Ivan Malopinsky](http://imsky.co).
 * Missing answers provided by [George Netu](https://github.com/georgenetu).
 
-### License
+## License
 
 Project Euler is protected under CC Attribution-Non-Commercial-Share Alike 2.0 UK: England & Wales
 
-### Usage
+## Usage
 
 ^sup and [sub] are frequently use for subscripts/superscripts.
 Many symbols are utf8, my apologies if you are on a 7-bit TTY.
@@ -499,7 +499,7 @@ than n and it is called abundant if this sum exceeds n.
 
 As 12 is the smallest abundant number, 1 + 2 + 3 + 4 + 6 = 16, the
 smallest number that can be written as the sum of two abundant numbers is
-24. By mathematical analysis, it can be shown that all integers greater
+24\. By mathematical analysis, it can be shown that all integers greater
 than 28123 can be written as the sum of two abundant numbers. However,
 this upper limit cannot be reduced any further by analysis even though it
 is known that the greatest number that cannot be expressed as the sum of
@@ -1279,8 +1279,8 @@ interesting properties.
 1. The set is cyclic, in that the last two digits of each number is the
    first two digits of the next number (including the last number with
    the first).
-2. Each polygonal type: triangle (P[3,127]=8128), square (P[4,91]=8281),
-   and pentagonal (P[5,44]=2882), is represented by a different number in
+2. Each polygonal type: triangle `(P[3,127]=8128)`, square `(P[4,91]=8281)`,
+   and pentagonal `(P[5,44]=2882)`, is represented by a different number in
    the set.
 3. This is the only set of 4-digit numbers with this property.
 
@@ -1393,7 +1393,7 @@ Problem 65
 ==========
 
 The square root of 2 can be written as an infinite continued fraction.
-   
+
 ```
    √2 = 1 + _________1________
             2 + _______1______
@@ -4194,8 +4194,8 @@ Problem 167
 
 
    For two positive integers a and b, the Ulam sequence U(a,b) is defined by
-   U(a,b)[1] = a, U(a,b)[2] = b and for k > 2,U(a,b)[k] is the smallest
-   integer greater than U(a,b)[(k-1)] which can be written in exactly one way
+   `U(a,b)[1] = a, U(a,b)[2] = b` and for `k > 2,U(a,b)[k]` is the smallest
+   integer greater than `U(a,b)[(k-1)]` which can be written in exactly one way
    as the sum of two distinct previous members of U(a,b).
 
    For example, the sequence U(1,2) begins with
@@ -4203,7 +4203,7 @@ Problem 167
    5 does not belong to it because 5 = 1 + 4 = 2 + 3 has two representations
    as the sum of two previous members, likewise 7 = 1 + 6 = 3 + 4.
 
-   Find ∑U(2,2n+1)[k] for 2 ≤ n ≤10, where k = 10^11.
+   Find `∑U(2,2n+1)[k]` for 2 ≤ n ≤10, where k = 10^11.
 
    
    Answer: aa5b61f6f4d96cbaeb5944b8fcdf64a3
@@ -4736,8 +4736,8 @@ Problem 190
 
 
    Let S[m] = (x[1], x[2], ... , x[m]) be the m-tuple of positive real
-   numbers with x[1] + x[2] + ... + x[m] = m for which P[m] = x[1] * x[2]^2 *
-   ... * x[m]^m is maximised.
+   numbers with x[1] + x[2] + ... + x[m] = m for which `P[m] = x[1] * x[2]^2 *
+   ... * x[m]^m` is maximised.
 
    For example, it can be verified that [P[10]] = 4112 ([ ] is the integer
    part function).
@@ -5373,10 +5373,12 @@ Moreover it is a primitive right angled triangle as gcd(a,b)=1 and gcd(b,c)=1.
 Also c is a perfect square.
 
 We will call a right angled triangle perfect if
+
 * it is a primitive right angled triangle
 * its hypotenuse is a perfect square
 
 We will call a right angled triangle super-perfect if
+
 * it is a perfect right angled triangle and
 * its area is a multiple of the perfect numbers 6 and 28.
 
@@ -6385,7 +6387,7 @@ Problem 259
      • Any number of (possibly nested) parentheses may be used to define the
        order of operations.
 
-   For example, 42 is reachable, since (1/23) * ((4*5)-6) * (78-9) = 42.
+   For example, 42 is reachable, since `(1/23) * ((4*5)-6) * (78-9)` = 42.
 
    What is the sum of all positive reachable integers?
 
@@ -6523,9 +6525,9 @@ Problem 264
 
 Consider all the triangles having:
 
-* All their vertices on lattice points.
-* Circumcentre at the origin O.
-* Orthocentre at the point H(5, 0).
+• All their vertices on lattice points.
+• Circumcentre at the origin O.
+• Orthocentre at the point H(5, 0).
 
 There are nine such triangles having a perimeter ≤ 50.
 Listed and shown in ascending order of their perimeter, they are:
@@ -7424,10 +7426,11 @@ turn to remove any number of stones from any heap until no stones remain.
 
 We'll consider the three-heap normal-play version of Nim, which works as
 follows:
-- At the start of the game there are three heaps of stones.
-- On his turn the player removes any positive number of stones from any
-single heap.
-- The first player unable to move (because no stones remain) loses.
+
+• At the start of the game there are three heaps of stones.
+• On his turn the player removes any positive number of stones from any
+  single heap.
+• The first player unable to move (because no stones remain) loses.
 
 If (n[1],n[2],n[3]) indicates a Nim position consisting of heaps of size
 n[1], n[2] and n[3] then there is a simple function X(n[1],n[2],n[3]) —
@@ -7443,10 +7446,11 @@ his opponent can respond with a move that leaves two heaps of equal size,
 at which point every move by the current player can be mirrored by his
 opponent until no stones remain; so the current player loses. To
 illustrate:
-- current player moves to (1,2,1)
-- opponent moves to (1,0,1)
-- current player moves to (0,0,1)
-- opponent moves to (0,0,0), and so wins.
+
+• current player moves to (1,2,1)
+• opponent moves to (1,0,1)
+• current player moves to (0,0,1)
+• opponent moves to (0,0,0), and so wins.
 
 For how many positive integers n ≤ 2^30 does X(n,2n,3n) = 0 ?
 
@@ -8771,10 +8775,11 @@ or white.
 The ant is always oriented in one of the cardinal directions (left, right,
 up or down) and moves from square to adjacent square according to the
 following rules:
+
 * if it is on a black square, it flips the color of the square to white,
-rotates 90 degrees counterclockwise and moves forward one square.
-*  if it is on a white square, it flips the color of the square to black,
-rotates 90 degrees clockwise and moves forward one square.
+  rotates 90 degrees counterclockwise and moves forward one square.
+* if it is on a white square, it flips the color of the square to black,
+  rotates 90 degrees clockwise and moves forward one square.
 
 Starting with a grid that is entirely white, how many squares are black
 after 10^18 moves of the ant?
@@ -9184,7 +9189,7 @@ In the applet to the right you can drag the points P[0], P[1], P[2] and
 P[3] to see what the Bézier curve (green curve) defined by those points
 looks like. You can also drag the point Q[0] along the segment P[0]P[1].
 
-**NOTE: The applet is currently unavailable**
+**NOTE**: The applet is currently unavailable
 
 From the construction it is clear that the Bézier curve will be tangent to
 the segments P[0]P[1] in P[0] and P[2]P[3] in P[3].
@@ -10506,8 +10511,8 @@ Problem 414
    numbers.
    However, it can be shown that for 5 digits and a base b = 6t+3≠9, a
    Kaprekar constant exists.
-   E.g. base 15: (10,4,14,9,5)[15]
-   base 21: (14,6,20,13,7)[21]
+   E.g. base 15: `(10,4,14,9,5)[15]`
+   base 21: `(14,6,20,13,7)[21]`
 
    Define C[b] to be the Kaprekar constant in base b for 5 digits.Define the
    function sb(i) to be
@@ -10887,8 +10892,8 @@ state becomes [1, 3, 10, 24, 51, 75].
 Starting from the initial configuration (t[0], t[1], …, t[10 000 000]),
 find the final state.
 Give as your answer the sum of the squares of the elements of the final
-state. For example, if the final state is [1, 2, 3] then 14 ( = 1^2 + 2^2
-+ 3^2) is your answer.
+state. For example, if the final state is [1, 2, 3] then 14 ( = 1^2 + 2^2 + 3^2)
+is your answer.
 
 Answer: b5d8157a351482da47da0512ca374007
 
@@ -11344,12 +11349,13 @@ Problem 444
    An arbitrary person is chosen to be the first player. Going around the
    table, each player has only one of two options:
 
-   1. The player can scratch his ticket and reveal its worth to everyone at
-   the table.
-   2. The player can trade his unscratched ticket for a previous player's
-   scratched ticket, and then leave the game with that ticket. The previous
-   player then scratches his newly-acquired ticket and reveals its worth to
-   everyone at the table.
+      1. The player can scratch his ticket and reveal its worth to everyone at
+         the table.
+
+      2. The player can trade his unscratched ticket for a previous player's
+         scratched ticket, and then leave the game with that ticket. The previous
+         player then scratches his newly-acquired ticket and reveals its worth to
+         everyone at the table.
 
    The game ends once all tickets have been scratched. All players still
    remaining at the table must leave with their currently-held tickets.
@@ -12211,7 +12217,6 @@ Problem 476
 
 Problem 477
 ===========
-    
 
 The number sequence game starts with a sequence _S_ of _N_ numbers written on a line.
 
@@ -12249,14 +12254,17 @@ Let us consider mixtures of three substances: A, B and C. A mixture can be descr
 For the purposes of this problem, we cannot separate the individual components from a mixture. However, we can combine different amounts of different mixtures to form mixtures with new ratios.
 
 For example, say we have three mixtures with ratios `(3 : 0 : 2)`, `(3 : 6 : 11)` and `(3 : 3 : 4)`. By mixing 10 units of the first, 20 units of the second and 30 units of the third, we get a new mixture with ratio `(6 : 5 : 9)`, since:
+
 ```
 (10·3/5 + 20·3/20 + 30·3/10 : 10·0/5 + 20·6/20 + 30·3/10 : 10·2/5 + 20·11/20 + 30·4/10) = (18 : 15 : 27) = (6 : 5 : 9)
 ```
+
 However, with the same three mixtures, it is impossible to form the ratio `(3 : 2 : 1)`, since the amount of B is always less than the amount of C.
 
 Let _n_ be a positive integer. Suppose that for every triple of integers `(a, b, c)` with `0 ≤ a, b, c ≤ n` and `gcd(a, b, c) = 1`, we have a mixture with ratio `(a : b : c)`. Let M(_n_) be the set of all such mixtures.
 
 For example, M(2) contains the 19 mixtures with the following ratios:
+
 ```
 {(0 : 0 : 1), (0 : 1 : 0), (0 : 1 : 1), (0 : 1 : 2), (0 : 2 : 1), 
 (1 : 0 : 0), (1 : 0 : 1), (1 : 0 : 2), (1 : 1 : 0), (1 : 1 : 1), 
@@ -12296,7 +12304,7 @@ Problem 480
 
 Consider all the words which can be formed by selecting letters, in any order, from the phrase:
 
-**thereisasyetinsufficientdataforameaningfulanswer**
+    `thereisasyetinsufficientdataforameaningfulanswer`
 
 Suppose those with 15 letters or less are listed in alphabetical order and numbered sequentially starting at 1.
 The list would include:
