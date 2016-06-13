@@ -1,0 +1,7 @@
+language: node_js
+node_js: 6
+install:
+  - npm install -g remark-cli
+script:
+  - remark ./README.md > ./README.md.new
+  - diff -u ./README.md ./README.md.new
