@@ -3394,8 +3394,8 @@ Answer: 1c343ba00e6d17d7239bf45869ffed0c
 Problem 140
 ===========
 
-Consider the infinite polynomial series `A[G](x) = xG[1] + x^2G[2] +
-x^3G[3] + ...`, where G[k] is the kth term of the second order recurrence
+Consider the infinite polynomial series `A[G](x) = xG[1] + x^2G[2] + x^3G[3] + ...`,
+where G[k] is the kth term of the second order recurrence
 relation G[k] = G[k−1] + G[k−2], G[1] = 1 and G[2] = 4; that is, 1, 4, 5,
 9, 14, 23, ... .
 
@@ -11378,8 +11378,8 @@ Problem 445
 
 For every integer n>1, the family of functions f[n,a,b] is defined by
 `f[n,a,b](x)`≡ax+b mod n for a,b,x integer and 0<a<n, 0≤b<n, 0≤x<n.
-We will call f[n,a,b] a retraction if `f[n,a,b](f[n,a,b](x))`≡`f[n,a,b](x)
-mod n` for every 0≤x<n.
+We will call f[n,a,b] a retraction if
+`f[n,a,b](f[n,a,b](x))`≡`f[n,a,b](x) mod n` for every 0≤x<n.
 Let R(n) be the number of retractions for n.
 
 You are given that
@@ -11398,11 +11398,11 @@ Problem 446
 ===========
 
 
-   For every integer n>1, the family of functions f[n,a,b] is defined by
-   `f[n,a,b](x)`≡ax+b mod n for a,b,x integer and 0<a<n, 0≤b<n, 0≤x<n.
-   We will call f[n,a,b] a retraction if `f[n,a,b](f[n,a,b](x))`≡`f[n,a,b](x)
-   mod n` for every 0≤x<n.
-   Let R(n) be the number of retractions for n.
+For every integer n>1, the family of functions f[n,a,b] is defined by
+`f[n,a,b](x)`≡ax+b mod n for a,b,x integer and 0<a<n, 0≤b<n, 0≤x<n.
+We will call f[n,a,b] a retraction if
+`f[n,a,b](f[n,a,b](x))`≡`f[n,a,b](x) mod n` for every 0≤x<n.
+Let R(n) be the number of retractions for n.
 
    F(N)=∑R(n^4+4) for 1≤n≤N.
    F(1024)=77532377300600.
@@ -11417,11 +11417,11 @@ Problem 447
 ===========
 
 
-   For every integer n>1, the family of functions f[n,a,b] is defined by
-   `f[n,a,b](x)`≡ax+b mod n for a,b,x integer and 0<a<n, 0≤b<n, 0≤x<n.
-   We will call f[n,a,b] a retraction if `f[n,a,b](f[n,a,b](x))`≡`f[n,a,b](x)
-   mod n` for every 0≤x<n.
-   Let R(n) be the number of retractions for n.
+For every integer n>1, the family of functions f[n,a,b] is defined by
+`f[n,a,b](x)`≡ax+b mod n for a,b,x integer and 0<a<n, 0≤b<n, 0≤x<n.
+We will call f[n,a,b] a retraction if
+`f[n,a,b](f[n,a,b](x))`≡`f[n,a,b](x) mod n` for every 0≤x<n.
+Let R(n) be the number of retractions for n.
 
    F(N)=∑R(n) for 2≤n≤N.
    F(10^7)≡638042271 (mod 1 000 000 007).
