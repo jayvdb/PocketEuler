@@ -24,7 +24,7 @@ module.exports = {
       "no-shortcut-reference-link": false,
       "no-undefined-references": false,
       "list-item-spacing": false,
-      "code-block-style": false,
+      //"code-block-style": false,
       "emphasis-marker": false,
       "dummy": false
     }
