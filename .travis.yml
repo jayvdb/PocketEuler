@@ -1,7 +1,9 @@
-language: ruby
+language: node_js
+node_js: 0.11
 install:
   - gem install mdl
-  - npm install -g markdownlint-cli
+  - npm install -g markdownlint-cli remark-cli remark-lint
 script:
   - mdl -c ./.mdlrc README.md
   - markdownlint -c ./.markdownlint.json README.md
+  - remark --config=./.remarkrc.js --frail --no-stdout -u lint ./README.md

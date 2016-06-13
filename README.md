@@ -3080,8 +3080,7 @@ twenty-two cubes; similarly the first layer on cuboids measuring
 5 x 3 x 1, 7 x 2 x 1, and 11 x 1 x 1 all contain forty-six cubes.
 
 We shall define C(n) to represent the number of cuboids that contain n
-cubes in one of its layers. So C(22) = 2, C(46) = 4, C(78) = 5, and C(118)
-= 8.
+cubes in one of its layers. So C(22) = 2, C(46) = 4, C(78) = 5, and C(118) = 8.
 
 It turns out that 154 is the least value of n for which C(n) = 10.
 
@@ -3475,8 +3474,8 @@ also intersect at T.
 ![](files/p_143_torricelli.gif)
 
 If the sum is minimised and a, b, c, p, q and r are all positive integers
-we shall call triangle ABC a Torricelli triangle. For example, a = 399, b
-= 455, c = 511 is an example of a Torricelli triangle, with p + q + r = 784.
+we shall call triangle ABC a Torricelli triangle. For example, a = 399,
+b = 455, c = 511 is an example of a Torricelli triangle, with p + q + r = 784.
 
 Find the sum of all distinct values of p + q + r ≤ 120000 for Torricelli
 triangles.
@@ -6471,6 +6470,7 @@ Give that length as your answer, rounded to three decimal places.
 
 Note: For convenience, the elevation function shown above is repeated
 below, in a form suitable for most programming languages:
+
 h=( 5000-0.005*(x*x+y*y+x*y)+12.5*(x+y) ) * exp(
 -abs(0.000001*(x*x+y*y)-0.0015*(x+y)+0.7) )
 
@@ -11334,18 +11334,18 @@ Problem 444
    with no two tickets alike. The goal of the game is for each person to
    maximize his ticket winnings upon leaving the game.
 
-   An arbitrary person is chosen to be the first player. Going around the
-   table, each player has only one of two options:
+An arbitrary person is chosen to be the first player. Going around the
+table, each player has only one of two options:
 
-   1. The player can scratch his ticket and reveal its worth to everyone at
+1. The player can scratch his ticket and reveal its worth to everyone at
    the table.
-   2. The player can trade his unscratched ticket for a previous player's
+2. The player can trade his unscratched ticket for a previous player's
    scratched ticket, and then leave the game with that ticket. The previous
    player then scratches his newly-acquired ticket and reveals its worth to
    everyone at the table.
 
-   The game ends once all tickets have been scratched. All players still
-   remaining at the table must leave with their currently-held tickets.
+The game ends once all tickets have been scratched. All players still
+remaining at the table must leave with their currently-held tickets.
 
    Assume that each player uses the optimal strategy for maximizing the
    expected value of his ticket winnings.
@@ -12295,7 +12295,9 @@ Problem 480
 
 Consider all the words which can be formed by selecting letters, in any order, from the phrase:
 
-    `thereisasyetinsufficientdataforameaningfulanswer`
+```text
+thereisasyetinsufficientdataforameaningfulanswer
+```
 
 Suppose those with 15 letters or less are listed in alphabetical order and numbered sequentially starting at 1.
 The list would include:
