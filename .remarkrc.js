@@ -7,14 +7,14 @@ module.exports = {
     "lint": {
       // config common with other tools
       "heading-style": false,  // MD003
-      "list-item-bullet-indent": false,  // MD006 & MD007
-      "hard-break-spaces": false,  // MD009
+      // "list-item-bullet-indent": false,  // MD006 & MD007
+      // "hard-break-spaces": false,  // MD009
       "no-tabs": false,  // MD010
       "no-consecutive-blank-lines": false,  // MD012
       "maximum-line-length": 250,  // MD013
       "no-multiple-toplevel-headings": false,  // MD025
       "no-html": false,  // MD033
-      "no-inline-padding": false,  // MD038
+      // "no-inline-padding": false,  // MD038
 
       // config explicitly stating defaults
       "ordered-list-marker-value": "ordered",  // MD029

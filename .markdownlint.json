@@ -1,10 +1,6 @@
 {
-  "comment": "Rules for the style guide at http://www.cirosantilli.com/markdown-style-guide/",
-
   "default": true,
   "MD003": false,
-  "MD006": false,
-  "MD007": false,
   "MD009": false,
   "MD010": false,
   "MD012": false,
@@ -12,7 +8,6 @@
   "MD025": false,
   "MD029": {"style": "ordered"},
   "MD033": false,
-  "MD038": false,
   "dummy": false
 }
 
