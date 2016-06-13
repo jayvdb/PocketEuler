@@ -2688,7 +2688,7 @@ and the sum of these primes is S(4, 1) = 22275. It turns out that for d =
 N(4, 0) = 13 such cases.
 
 In the same way we obtain the following results for 4-digit primes.
-   
+
 | Digit, d | M(4, d) | N(4, d) | S(4,d) |
 | -------- | --------| ------- | ------ |
 | 0        | 2       | 13      | 67061  |
@@ -3975,7 +3975,7 @@ number is arrived at that is less than 10. Thus the digital root of 467 is 8.
 We shall call a Digital Root Sum (DRS) the sum of the digital roots of the
 individual factors of our number.
 The chart below demonstrates all of the DRS values for 24.
-   
+
 | Factorisation | Digital Root Sum |
 | ------------- | ---------------- |
 | 2x2x2x3       | 9                |
@@ -4365,7 +4365,7 @@ Problem 175
    f(n)/f(n-1)=123456789/987654321.
 
    Give your answer as comma separated integers, without any whitespaces.
-   
+
    Answer: 796dddd004c3465229058072f5b4583e
 
 
@@ -4421,7 +4421,7 @@ Problem 178
    A pandigital number contains every decimal digit from 0 to 9 at least
    once.
    How many pandigital step numbers less than 10^40 are there?
-   
+
    Answer: 2ffddfa898fa5df6321aebea84d4f33f
 
 
@@ -4852,7 +4852,7 @@ Problem 196
 
 
    Build a triangle from all positive integers in the following way:
-   
+
    ![](files/p_196.png)
 
    Each positive integer has up to eight neighbours in the triangle.
@@ -5968,13 +5968,13 @@ by the sequence LULUR we reach the configuration (E):
 (S) ![](files/p_244_start.gif), (E) ![](files/p_244_example.gif)
 
 For each path, its checksum is calculated by (pseudocode):
-   
+
     checksum = 0
     checksum = (checksum × 243 + m[1]) mod 100 000 007
     checksum = (checksum × 243 + m[2]) mod 100 000 007
        …
     checksum = (checksum × 243 + m[n]) mod 100 000 007
-    
+
 where m[k] is the ASCII value of the k^th letter in the move sequence and
 the ASCII values for the moves are:
 
@@ -6181,7 +6181,7 @@ increases up to about eleven or twelve, then tends to drop again before
 finishing at a single segment (all pieces placed).
 
 For example:
-   
+
 | Piece Placed | Segments So Far |
 | ------------ | --------------- |
 | 12           | 1               |
@@ -6480,8 +6480,9 @@ Give that length as your answer, rounded to three decimal places.
 
 Note: For convenience, the elevation function shown above is repeated
 below, in a form suitable for most programming languages:
-h=( 5000-0.005*(x*x+y*y+x*y)+12.5*(x+y) ) * exp(
--abs(0.000001*(x*x+y*y)-0.0015*(x+y)+0.7) )
+
+`h=( 5000-0.005*(x*x+y*y+x*y)+12.5*(x+y) ) * exp(
+-abs(0.000001*(x*x+y*y)-0.0015*(x+y)+0.7) )`
 
 Answer: a5921e175a44d31e7f82f7f9a61a36af
 
@@ -6767,9 +6768,8 @@ Problem 274
 
    For example, the divisibility multiplier for 113 is 34.
 
-   f(76275) = 7627 + 5 * 34 = 7797 : 76275 and 7797 are both divisible by 113
-   f(12345) = 1234 + 5 * 34 = 1404 : 12345 and 1404 are both not divisible by
-   113
+   `f(76275) = 7627 + 5 * 34 = 7797` : 76275 and 7797 are both divisible by 113
+   `f(12345) = 1234 + 5 * 34 = 1404` : 12345 and 1404 are both not divisible by 113
 
    The sum of the divisibility multipliers for the primes that are coprime to
    10 and less than 1000 is 39517. What is the sum of the divisibility
@@ -8267,10 +8267,10 @@ For example,
 
 with e = 2.7182818... being Euler's constant.
 
-   It can be shown that a(n) is of the form (A(n) e + B(n))/(n!) for integers A(n) and B(n).
-                                                  
+It can be shown that a(n) is of the form (A(n) e + B(n))/(n!) for integers A(n) and B(n).
+
 For example:
-   
+
     a(10) = _328161643 e − 652694486_.
                       10!
 
@@ -9029,7 +9029,7 @@ The smallest cyclic number is the 6-digit number 142857:
     142857 × 6 = 857142
 
 The next cyclic number is 0588235294117647 with 16 digits:
-   
+
     0588235294117647 × 1 = 0588235294117647
     0588235294117647 × 2 = 1176470588235294
     0588235294117647 × 3 = 1764705882352941
@@ -9074,7 +9074,7 @@ Eventually, every person in the line gets a room in the hotel.
 
 Define P(f, r) to be n if person n occupies room r in floor f, and 0 if no
 person occupies the room. Here are a few examples:
-   
+
     P(1, 1) = 1
     P(1, 2) = 3
     P(2, 1) = 2
@@ -11196,7 +11196,7 @@ Problem 437
    roots and the sum of these primes is 1480491.
    Find the sum of the primes less than 100,000,000 with at least one
    Fibonacci primitive root.
-   
+
    Answer: 98bb66462d635d8225416a644e4637b0
 
 
@@ -11204,9 +11204,8 @@ Problem 438
 ===========
 
 
-   For an n-tuple of integers t = (a[1], ..., a[n]), let (x[1], ..., x[n]) be
-   the solutions of the polynomial equation x^n + a[1]x^n-1 + a[2]x^n-2 + ...
-   + a[n-1]x + a[n] = 0.
+For an n-tuple of integers t = (a[1], ..., a[n]), let (x[1], ..., x[n]) be the
+solutions of the polynomial equation x^n + a[1]x^n-1 + a[2]x^n-2 + ... + a[n-1]x + a[n] = 0.
 
    Consider the following two conditions:
 
