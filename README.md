@@ -3643,10 +3643,9 @@ Problem 149
    First, generate four million pseudo-random numbers using a specific form
    of what is known as a "Lagged Fibonacci Generator":
 
-   For 1 ≤ k ≤ 55, s[k] = [100003 − 200003k + 300007k^3] (modulo 1000000) −
-   500000.
-   For 56 ≤ k ≤ 4000000, s[k] = [s[k−24] + s[k−55] + 1000000] (modulo
-   1000000) − 500000.
+   For 1 ≤ _k_ ≤ 55, Sₖ = \[100003 − 200003k + 300007k³] (modulo 1000000) − 500000.
+
+   For 56 ≤ _k_ ≤ 4000000, Sₖ = \[Sₖ₋₂₄ + sₖ₋₅₅ + 1000000] (modulo 1000000) − 500000.
 
    Thus, s[10] = −393027 and s[100] = 86613.
 
@@ -4130,9 +4129,9 @@ Problem 165
 
    Consider the three segments L[1], L[2], and L[3]:
 
-   L[1]: (27, 44) to (12, 32)
-   L[2]: (46, 53) to (17, 62)
-   L[3]: (46, 70) to (22, 40)
+   L₁: (27, 44) to (12, 32)
+   L₂: (46, 53) to (17, 62)
+   L₃: (46, 70) to (22, 40)
 
    It can be verified that line segments L[2] and L[3] have a true
    intersection point. We note that as the one of the end points of L[3]:
@@ -4144,16 +4143,16 @@ Problem 165
    20000 numbers using the so-called "Blum Blum Shub" pseudo-random number
    generator.
 
-   s[0] = 290797
+   s₀ = 290797
 
-   s[n+1] = s[n]×s[n] (modulo 50515093)
+   sₙ₊₁ = sₙ×sₙ (modulo 50515093)
 
-   t[n] = s[n] (modulo 500)
+   tₙ = sₙ (modulo 500)
 
    To create each line segment, we use four consecutive numbers t[n]. That
    is, the first line segment is given by:
 
-   (t[1], t[2]) to (t[3], t[4])
+   (t₁, t₂) to (t₃, t₄)
 
    The first four numbers computed according to the above generator should
    be: 27, 144, 12 and 232. The first segment would thus be (27,144) to
@@ -4651,8 +4650,9 @@ The telephone number of the caller and the called number in record n are
 Caller(n) = S[2n-1] and Called(n) = S[2n] where S[1,2,3,...] come from the
 "Lagged Fibonacci Generator":
 
-For 1 ≤ k ≤ 55, S[k] = [100003 - 200003k + 300007k^3] (modulo 1000000)
-For 56 ≤ k, S[k] = [S[k-24] + S[k-55]] (modulo 1000000)
+For 1 ≤ k ≤ 55, Sₖ = \[100003 - 200003k + 300007k³] (modulo 1000000)
+
+For 56 ≤ k, Sₖ = \[Sₖ₋₂₄ + Sₖ₋₅₅] (modulo 1000000)
 
 If Caller(n) = Called(n) then the user is assumed to have misdialled and
 the call fails; otherwise the call is successful.
@@ -5210,12 +5210,12 @@ Problem 211
 ===========
 
 
-   For a positive integer n, let σ[2](n) be the sum of the squares of its
+   For a positive integer _n_, let σ₂(_n_) be the sum of the squares of its
    divisors. For example,
 
-                       σ[2](10) = 1 + 4 + 25 + 100 = 130.
+                       σ₂(10) = 1 + 4 + 25 + 100 = 130.
 
-   Find the sum of all n, 0 < n < 64,000,000 such that σ[2](n) is a perfect
+   Find the sum of all _n_, 0 < _n_ < 64,000,000 such that σ₂(_n_) is a perfect
    square.
 
    
@@ -5554,25 +5554,25 @@ Answer: 7b87cd0a96f0f2f12f911cdc66608d95
 Problem 228
 ===========
 
-Let S[n] be the regular n-sided polygon – or shape – whose vertices v[k]
-(k = 1,2,…,n) have coordinates:
+Let Sₙ be the regular _n_-sided polygon – or shape – whose vertices vₖ
+(_k_ = 1,2,…,_n_) have coordinates:
 
-	  x[k]   =   cos( ^2k-1/[n] × 180° )
-	  y[k]   =   sin( ^2k-1/[n] × 180° )
+	  xₖ   =   cos( ²ᵏ⁻¹/ₙ × 180° )
+	  yₖ   =   sin( ²ᵏ⁻¹/ₙ × 180° )
 
-Each S[n] is to be interpreted as a filled shape consisting of all points
+Each Sₙ is to be interpreted as a filled shape consisting of all points
 on the perimeter and in the interior.
 
-The Minkowski sum, S+T, of two shapes S and T is the result of adding
-every point in S to every point in T, where point addition is performed
-coordinate-wise: (u, v) + (x, y) = (u+x, v+y).
+The _Minkowski sum_, _S_+_T_, of two shapes _S_ and _T_ is the result of adding
+every point in _S_ to every point in _T_, where point addition is performed
+coordinate-wise: (_u_, _v_) + (_x_, _y_) = (_u_+_x_, _v_+_y_).
 
-For example, the sum of S[3] and S[4] is the six-sided shape shown in pink
+For example, the sum of S₃ and S₄ is the six-sided shape shown in pink
 below:
 
 ![](files/p_228.png)
 
-How many sides does S[1864] + S[1865] + … + S[1909] have?
+How many sides does S₁₈₆₄ + S₁₈₆₅ + … + S₁₉₀₉ have?
 
 Answer: 35d0195ddaf58e52e12400de1c9333d8
 
@@ -5615,18 +5615,18 @@ Answer: d68b5ec8df4a56991901f67afbdef24f
 Problem 230
 ===========
 
-For any two strings of digits, A and B, we define F[A,B] to be the
+For any two strings of digits, A and B, we define F<sub>A,B</sub> to be the
 sequence (A,B,AB,BAB,ABBAB,...) in which each term is the concatenation of
 the previous two.
 
-Further, we define D[A,B](n) to be the nth digit in the first term of
-F[A,B] that contains at least n digits.
+Further, we define D<sub>A,B</sub>(_n_) to be the _n_ᵗʰ digit in the first term of
+F<sub>A,B</sub> that contains at least n digits.
 
 Example:
 
-Let A=1415926535, B=8979323846. We wish to find D[A,B](35), say.
+Let A=1415926535, B=8979323846. We wish to find D<sub>A,B</sub>(35), say.
 
-The first few terms of F[A,B] are:
+The first few terms of F<sub>A,B</sub> are:
 
     1415926535
     8979323846
@@ -5634,7 +5634,7 @@ The first few terms of F[A,B] are:
     897932384614159265358979323846
     14159265358979323846897932384614159265358979323846
 
-Then D[A,B](35) is the 35th digit in the fifth term, which is 9.
+Then D<sub>A,B</sub>(35) is the 35th digit in the fifth term, which is 9.
 
 Now we use for A the first 100 digits of π behind the decimal point:
 
@@ -5646,7 +5646,7 @@ and for B the next hundred digits:
    82148086513282306647093844609550582231725359408128
    48111745028410270193852110555964462294895493038196.
 
-Find ∑[n = 0,1,...,17]   10^n× D[A,B]((127+19n)×7^n).
+Find ∑ₙ ₌ <sub>0,1,...,17</sub>   10ⁿ× D<sub>A,B</sub>((127+19_n_)×7ⁿ).
 
 Answer: 040735038021ff4704bbd3a0964369ef
 
@@ -9192,11 +9192,11 @@ the segments P[0]P[1] in P[0] and P[2]P[3] in P[3].
 A cubic Bézier curve with P[0]=(1,0), P[1]=(1,v), P[2]=(v,1) and
 P[3]=(0,1) is used to approximate a quarter circle.
 The value v>0 is chosen such that the area enclosed by the lines OP[0],
-OP[3] and the curve is equal to ^π/[4] (the area of the quarter circle).
+OP[3] and the curve is equal to <sup>π</sup>/₄ (the area of the quarter circle).
 
 By how many percent does the length of the curve differ from the length of
 the quarter circle?
-That is, if L is the length of the curve, calculate 100*^(L-π/2)/[(π/2)].
+That is, if L is the length of the curve, calculate 100×<sup>L-π/2</sup>⧸<sub>π/2</sub> .
 Give your answer rounded to 10 digits behind the decimal point.
 
 Answer: 2bc63386b7cccc64c67f90e719936143
@@ -9670,14 +9670,14 @@ Problem 383
 ===========
 
 
-   Let f[5](n) be the largest integer x for which 5^x divides n.
-   For example, f[5](625000) = 7.
+   Let f₅(_n_) be the largest integer _x_ for which 5<sup>_x_</sup> divides n.
+   For example, f₅(625000) = 7.
 
-   Let T[5](n) be the number of integers i which satisfy f[5]((2·i-1)!) <
-   2·f[5](i!) and 1 ≤ i ≤ n.
-   It can be verified that T[5](10^3) = 68 and T[5](10^9) = 2408210.
+   Let T₅(_n_) be the number of integers i which satisfy f₅((2·_i_-1)!) <
+   2·f₅(_i_!) and 1 ≤ _i_ ≤ _n_.
+   It can be verified that T₅(10³) = 68 and T₅(10⁹) = 2408210.
 
-   Find T[5](10^18).
+   Find T₅(10¹⁸).
 
    
    Answer: c1bc7c945344e1967bfaced9ade895a0
@@ -11361,12 +11361,13 @@ Problem 444
    the game ends in a game consisting of p players (e.g. E(111) = 5.2912 when
    rounded to 5 significant digits).
 
-   Let S[1](N) = E(p)
-   Let S[k](N) = S[k-1](p) for k > 1
+   Let S₁(_N_) = ![](files/p_444_sum.png) E(_p_)
 
-   Find S[20](10^14) and write the answer in scientific notation rounded to
+   Let Sₖ(_N_) = ![](files/p_444_sum.png) Sₖ₋₁(_p_) for _k_ > 1
+
+   Find S₂₀(10¹⁴) and write the answer in scientific notation rounded to
    10 significant digits. Use a lowercase e to separate mantissa and exponent
-   (e.g. S[3](100) = 5.983679014e5).
+   (e.g. S₃(100) = 5.983679014e5).
 
    
    Answer: e6745c386ba3c0de1bf56897e453c7c8
@@ -11736,10 +11737,10 @@ Problem 460
        ln(y[0])).
 
    The left image is one of the possible paths for d = 4. First the ant goes
-   from A(0, 1) to P[1](1, 3) at velocity (3 - 1) / (ln(3) - ln(1)) ≈ 1.8205.
+   from A(0, 1) to P₁(1, 3) at velocity (3 - 1) / (ln(3) - ln(1)) ≈ 1.8205.
    Then the required time is sqrt(5) / 1.8205 ≈ 1.2283.
-   From P[1](1, 3) to P[2](3, 3) the ant travels at velocity 3 so the
-   required time is 2 / 3 ≈ 0.6667. From P[2](3, 3) to B(4, 1) the ant
+   From P₁(1, 3) to P₂(3, 3) the ant travels at velocity 3 so the
+   required time is 2 / 3 ≈ 0.6667. From P₂(3, 3) to B(4, 1) the ant
    travels at velocity (1 - 3) / (ln(1) - ln(3)) ≈ 1.8205 so the required
    time is sqrt(5) / 1.8205 ≈ 1.2283.
    Thus the total required time is 1.2283 + 0.6667 + 1.2283 = 3.1233.
@@ -11762,21 +11763,21 @@ Problem 461
 ===========
 
 
-   Let f[n](k) = e^k/n - 1, for all non-negative integers k.
+   Let _fₙ_(_k_) = _e_<sup>_k_/_n_</sup> - 1, for all non-negative integers _k_.
 
-   Remarkably, f[200](6) + f[200](75) + f[200](89) + f[200](226) =
+   Remarkably, _f_₂₀₀(6) + _f_₂₀₀(75) + _f_₂₀₀(89) + _f_₂₀₀(226) =
    3.141592644529… ≈ π.
 
    In fact, it is the best approximation of π of the form
-   f[n](a) + f[n](b) + f[n](c) + f[n](d) for n = 200.
+   fₙ(a) + fₙ(b) + fₙ(c) + fₙ(d) for n = 200.
 
-   Let g(n) = a^2 + b^2 + c^2 + d^ 2 for a, b, c, d that minimize the error:
-   | f[n](a) + f[n](b) + f[n](c) + f[n](d) - π|
-   (where |x| denotes the absolute value of x).
+   Let _g_(_n_) = _a²_ + _b²_ + _c²_ + _d²_ for _a_, _b_, _c_, _d_ that minimize the error:
+   | _fₙ_(_a_) + _fₙ_(_b_) + _fₙ_(_c_) + _fₙ_(_d_) - π|
+   (where |_x_| denotes the absolute value of _x_).
 
-   You are given g(200) = 6^2 + 75^2 + 89^2 + 226^2 = 64658.
+   You are given _g_(200) = 6² + 75² + 89² + 226² = 64658.
 
-   Find g(10000). ^
+   Find _g_(10000).
 
    
    Answer: 70c3eff774c9d5cdb29284c16b9d1bc6
@@ -11962,16 +11963,20 @@ Problem 468
 ===========
 
 
-   An integer is called B-smooth if none of its prime factors is greater than
-   B.
+   An integer is called _B_-smooth if none of its prime factors is greater than
+   _B_.
 
-   Let S[B](n) be the largest B-smooth divisor of n.
+   Let S<sub>_B_</sub>(_n_) be the largest _B_-smooth divisor of _n_.
+
    Examples:
-   S[1](10) = 1
-   S[4](2100) = 12
-   S[17](2496144) = 5712
 
-   Define F(n) = ∑[1≤B≤n] ∑[0≤r≤n] S[B](C(n,r)). Here, C(n,r) denotes the
+   S₁(10) = 1
+
+   S₄(2100) = 12
+
+   S₁₇(2496144) = 5712
+
+   Define F(_n_) = ∑<sub>1≤_B_≤_n_</sub> ∑<sub>0≤_r_≤_n_</sub> S<sub>_B_</sub>(C(_n_,_r_)). Here, C(_n_,_r_) denotes the
    binomial coefficient.
    Examples:
    F(11) = 3132
