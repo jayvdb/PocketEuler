@@ -3051,8 +3051,8 @@ Problem 125
    sum of consecutive squares: 6^2 + 7^2 + 8^2 + 9^2 + 10^2 + 11^2 + 12^2.
 
    There are exactly eleven palindromes below one-thousand that can be
-   written as consecutive square sums, and the sum of these palindromes is
-   4164. Note that 1 = 0^2 + 1^2 has not been included as this problem is
+   written as consecutive square sums, and the sum of these palindromes is 4164.
+   Note that 1 = 0^2 + 1^2 has not been included as this problem is
    concerned with the squares of positive integers.
 
    Find the sum of all the numbers less than 10^8 that are both palindromic
@@ -5235,12 +5235,14 @@ Problem 212
    Let C[1],...,C[50000] be a collection of 50000 axis-aligned cuboids such
    that C[n] has parameters
 
+```text
    x[0] = S[6n-5] modulo 10000
    y[0] = S[6n-4] modulo 10000
    z[0] = S[6n-3] modulo 10000
    dx = 1 + (S[6n-2] modulo 399)
    dy = 1 + (S[6n-1] modulo 399)
    dz = 1 + (S[6n] modulo 399)
+```
 
    where S[1],...,S[300000] come from the "Lagged Fibonacci Generator":
 
@@ -5876,10 +5878,12 @@ Problem 240
    There are 1111 ways in which five 6-sided dice (sides numbered 1 to 6) can
    be rolled so that the top three sum to 15. Some examples are:
 
+```text
    D[1],D[2],D[3],D[4],D[5] = 4,3,6,3,5
    D[1],D[2],D[3],D[4],D[5] = 4,3,3,5,6
    D[1],D[2],D[3],D[4],D[5] = 3,3,3,6,6
    D[1],D[2],D[3],D[4],D[5] = 6,6,3,3,3
+```
 
    In how many ways can twenty 12-sided dice (sides numbered 1 to 12) be
    rolled so that the top ten sum to 70?
@@ -7710,11 +7714,12 @@ shown below:
 
 ![](files/p_312_sierpinsky8t.gif)
 
-It can also be verified that :
-    C(1) = C(2) = 1
-    C(5) = 71328803586048
-    C(10 000) mod 10^8 = 37652224
-    C(10 000) mod 13^8 = 617720485
+It can also be verified that:
+
+*   C(1) = C(2) = 1
+*   C(5) = 71328803586048
+*   C(10 000) mod 10^8 = 37652224
+*   C(10 000) mod 13^8 = 617720485
 
 Find C(C(C(10 000))) mod 13^8.
 
@@ -10887,8 +10892,8 @@ state becomes [1, 3, 10, 24, 51, 75].
 Starting from the initial configuration (t[0], t[1], …, t[10 000 000]),
 find the final state.
 Give as your answer the sum of the squares of the elements of the final
-state. For example, if the final state is [1, 2, 3] then 14 ( = 1^2 + 2^2
-+ 3^2) is your answer.
+state. For example, if the final state is [1, 2, 3] then 14
+( = 1^2 + 2^2 + 3^2) is your answer.
 
 Answer: b5d8157a351482da47da0512ca374007
 
@@ -11205,8 +11210,8 @@ Problem 438
 
 
    For an n-tuple of integers t = (a[1], ..., a[n]), let (x[1], ..., x[n]) be
-   the solutions of the polynomial equation x^n + a[1]x^n-1 + a[2]x^n-2 + ...
-   + a[n-1]x + a[n] = 0.
+   the solutions of the polynomial equation x^n + a[1]x^n-1 + a[2]x^n-2 + ... +
+   a[n-1]x + a[n] = 0.
 
    Consider the following two conditions:
 
@@ -11232,11 +11237,9 @@ Problem 439
 
    Let d(k) be the sum of all divisors of k.
    We define the function S(N) = ∑[1≤i≤N] ∑[1≤j≤N] d(i·j).
-   For example, S(3) = d(1) + d(2) + d(3) + d(2) + d(4) + d(6) + d(3) + d(6)
-   + d(9) = 59.
+   For example, S(3) = d(1) + d(2) + d(3) + d(2) + d(4) + d(6) + d(3) + d(6) + d(9) = 59.
 
-   You are given that S(10^3) = 563576517282 and S(10^5) mod 10^9 =
-   215766508.
+   You are given that S(10^3) = 563576517282 and S(10^5) mod 10^9 = 215766508.
    Find S(10^11) mod 10^9.
 
    
@@ -11319,8 +11322,10 @@ Problem 443
 
    The first few values are:
 
+```text
  n     4   5   6   7   8   9   10  11  12  13  14  15  16  17  18  19  20  ...
  g(n)  13  14  16  17  18  27  28  29  30  31  32  33  34  51  54  55  60  ...
+```
 
    You are given that g(1 000) = 2524 and g(1 000 000) = 2624152.
 
