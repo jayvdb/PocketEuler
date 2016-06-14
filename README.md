@@ -6389,7 +6389,7 @@ arithmetic expression obeying the following rules:
 *   Any number of (possibly nested) parentheses may be used to define the
     order of operations.
 
-For example, 42 is reachable, since (1/23) * ((4*5)-6) * (78-9) = 42.
+For example, 42 is reachable, since `(1/23) * ((4*5)-6) * (78-9) = 42`.
 
 What is the sum of all positive reachable integers?
 
