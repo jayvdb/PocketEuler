@@ -21,7 +21,7 @@ Answers are hashed with the MD5 algorithm. You can verify your answers online us
 
 If you're using Linux or OS X, you can use `md5sum` to verify your answers as well:
 
-```
+```bash
 echo -n 'myanswer' | md5sum
 ```
 
@@ -499,7 +499,7 @@ than n and it is called abundant if this sum exceeds n.
 
 As 12 is the smallest abundant number, 1 + 2 + 3 + 4 + 6 = 16, the
 smallest number that can be written as the sum of two abundant numbers is
-24. By mathematical analysis, it can be shown that all integers greater
+24\. By mathematical analysis, it can be shown that all integers greater
 than 28123 can be written as the sum of two abundant numbers. However,
 this upper limit cannot be reduced any further by analysis even though it
 is known that the greatest number that cannot be expressed as the sum of
@@ -1319,7 +1319,7 @@ Problem 64
 All square roots are periodic when written as continued fractions and can
 be written in the form:
 
-```
+```text
 √N = a[0] +  ___________1___________
               a[1] + _______1_______
                      a[2] + ____1___
@@ -1328,7 +1328,7 @@ be written in the form:
 
 For example, let us consider √23:
 
-```
+```text
 √23 = 4 + √23 — 4 = 4 + ___1___ = 4 +  ______1______
 						 __1__         1 + _√23 – 3_
 						 √23—4                 7
@@ -1336,7 +1336,7 @@ For example, let us consider √23:
 
 If we continue we would get the following expansion:
 
-```
+```text
 √23 = 4 +  _________1__________
 		   1 + ______ 1________
                 3 + _____1______
@@ -1392,8 +1392,8 @@ Problem 65
 ==========
 
 The square root of 2 can be written as an infinite continued fraction.
-   
-```
+
+```text
    √2 = 1 + _________1________
             2 + _______1______
                 2 + _____1____
@@ -1409,7 +1409,7 @@ It turns out that the sequence of partial values of continued fractions
 for square roots provide the best rational approximations. Let us consider
 the convergents for √2.
 
-```
+```text
 1 + _1_ = 3/2
      2  
 
@@ -2404,7 +2404,7 @@ the following properties are true:
 If S(A) is minimised for a given n, we shall call it an optimum special
 sum set. The first five optimum special sum sets are given below.
 
-```
+```text
 n = 1: {1}
 n = 2: {1, 2}
 n = 3: {2, 3, 4}
@@ -2924,8 +2924,7 @@ Problem 120
    Let r be the remainder when (a−1)^n + (a+1)^n is divided by a^2.
 
    For example, if a = 7 and n = 3, then r = 42: 6^3 + 8^3 = 728 ≡ 42 mod 49.
-   And as n varies, so too will r, but for a = 7 it turns out that r[max] =
-   42.
+   And as n varies, so too will r, but for a = 7 it turns out that r[max] = 42.
 
    For 3 ≤ a ≤ 1000, find ∑ r[max].
 
@@ -3079,8 +3078,7 @@ twenty-two cubes; similarly the first layer on cuboids measuring
 5 x 3 x 1, 7 x 2 x 1, and 11 x 1 x 1 all contain forty-six cubes.
 
 We shall define C(n) to represent the number of cuboids that contain n
-cubes in one of its layers. So C(22) = 2, C(46) = 4, C(78) = 5, and C(118)
-= 8.
+cubes in one of its layers. So C(22) = 2, C(46) = 4, C(78) = 5, and C(118) = 8.
 
 It turns out that 154 is the least value of n for which C(n) = 10.
 
@@ -3162,8 +3160,7 @@ Problem 129
 
    Given that n is a positive integer and GCD(n, 10) = 1, it can be shown
    that there always exists a value, k, for which R(k) is divisible by n, and
-   let A(n) be the least such value of k; for example, A(7) = 6 and A(41) =
-   5.
+   let A(n) be the least such value of k; for example, A(7) = 6 and A(41) = 5.
 
    The least value of n for which A(n) first exceeds ten is 17.
 
@@ -3182,8 +3179,7 @@ Problem 130
 
    Given that n is a positive integer and GCD(n, 10) = 1, it can be shown
    that there always exists a value, k, for which R(k) is divisible by n, and
-   let A(n) be the least such value of k; for example, A(7) = 6 and A(41) =
-   5.
+   let A(n) be the least such value of k; for example, A(7) = 6 and A(41) = 5.
 
    You are given that for all primes, p > 5, that p − 1 is divisible by A(p).
    For example, when p = 41, A(41) = 5, and 40 is divisible by 5.
@@ -3341,8 +3337,7 @@ below.
 | (√34−3)/5 | 5         |
 
 We shall call `A[F](x)` a golden nugget if x is rational, because they
-become increasingly rarer; for example, the 10th golden nugget is
-74049690.
+become increasingly rarer; for example, the 10th golden nugget is 74049690.
 
 Find the 15th golden nugget.
 
@@ -3351,8 +3346,7 @@ Answer: 44845aa0f47ec925a3b43e6460a55e27
 Problem 138
 ===========
 
-Consider the isosceles triangle with base length, b = 16, and legs, L =
-17.
+Consider the isosceles triangle with base length, b = 16, and legs, L = 17.
 
 ![](files/p_138.gif)
 
@@ -3413,8 +3407,7 @@ below.
 | 1/2         | 5         |
 
 We shall call `A[G](x)` a golden nugget if x is rational, because they
-become increasingly rarer; for example, the 20th golden nugget is
-211345365.
+become increasingly rarer; for example, the 20th golden nugget is 211345365.
 
 Find the sum of the first thirty golden nuggets.
 
@@ -3437,8 +3430,7 @@ Problem 141
 
    Some progressive numbers, such as 9 and 10404 = 102^2, happen to also be
    perfect squares.
-   The sum of all progressive perfect squares below one hundred thousand is
-   124657.
+   The sum of all progressive perfect squares below one hundred thousand is 124657.
 
    Find the sum of all progressive perfect squares below one trillion
    (10^12).
@@ -3480,9 +3472,8 @@ also intersect at T.
 ![](files/p_143_torricelli.gif)
 
 If the sum is minimised and a, b, c, p, q and r are all positive integers
-we shall call triangle ABC a Torricelli triangle. For example, a = 399, b
-= 455, c = 511 is an example of a Torricelli triangle, with p + q + r =
-784.
+we shall call triangle ABC a Torricelli triangle. For example, a = 399,
+b = 455, c = 511 is an example of a Torricelli triangle, with p + q + r = 784.
 
 Find the sum of all distinct values of p + q + r ≤ 120000 for Torricelli
 triangles.
@@ -4192,8 +4183,8 @@ Problem 167
 
 
    For two positive integers a and b, the Ulam sequence U(a,b) is defined by
-   U(a,b)[1] = a, U(a,b)[2] = b and for k > 2,U(a,b)[k] is the smallest
-   integer greater than U(a,b)[(k-1)] which can be written in exactly one way
+   `U(a,b)[1] = a, U(a,b)[2] = b` and for `k > 2,U(a,b)[k]` is the smallest
+   integer greater than `U(a,b)[(k-1)]` which can be written in exactly one way
    as the sum of two distinct previous members of U(a,b).
 
    For example, the sequence U(1,2) begins with
@@ -4201,7 +4192,7 @@ Problem 167
    5 does not belong to it because 5 = 1 + 4 = 2 + 3 has two representations
    as the sum of two previous members, likewise 7 = 1 + 6 = 3 + 4.
 
-   Find ∑U(2,2n+1)[k] for 2 ≤ n ≤10, where k = 10^11.
+   Find `∑U(2,2n+1)[k]` for 2 ≤ n ≤10, where k = 10^11.
 
    
    Answer: aa5b61f6f4d96cbaeb5944b8fcdf64a3
@@ -4441,7 +4432,7 @@ Problem 180
 
 For any integer n, consider the three functions
 
-```
+```text
 f[1,n](x,y,z) = x^n+1 + y^n+1 − z^n+1
 f[2,n](x,y,z) = (xy + yz + zx)*(x^n-1 + y^n-1 − z^n-1)
 f[3,n](x,y,z) = xyz*(x^n-2 + y^n-2 − z^n-2)
@@ -4449,7 +4440,7 @@ f[3,n](x,y,z) = xyz*(x^n-2 + y^n-2 − z^n-2)
 
 and their combination
 
-```
+```text
 f[n](x,y,z) = f[1,n](x,y,z) + f[2,n](x,y,z) − f[3,n](x,y,z)
 ```
 
@@ -4733,9 +4724,9 @@ Problem 190
 ===========
 
 
-   Let S[m] = (x[1], x[2], ... , x[m]) be the m-tuple of positive real
-   numbers with x[1] + x[2] + ... + x[m] = m for which P[m] = x[1] * x[2]^2 *
-   ... * x[m]^m is maximised.
+Let S[m] = (x[1], x[2], ... , x[m]) be the m-tuple of positive real
+numbers with x[1] + x[2] + ... + x[m] = m for which
+`P[m] = x[1] * x[2]^2 * ... * x[m]^m` is maximised.
 
    For example, it can be verified that [P[10]] = 4112 ([ ] is the integer
    part function).
@@ -4786,8 +4777,7 @@ Problem 192
    101/28.
 
    Find the sum of all denominators of the best approximations to √n for the
-   denominator bound 10^12, where n is not a perfect square and 1 < n ≤
-   100000.
+   denominator bound 10^12, where n is not a perfect square and 1 < n ≤ 100000.
 
    
    Answer: e5ec7d4b094709b1fcebbd73b10e6264
@@ -5252,8 +5242,7 @@ Problem 212
    Thus, C[1] has parameters {(7,53,183),(94,369,56)}, C[2] has parameters
    {(2383,3563,5079),(42,212,344)}, and so on.
 
-   The combined volume of the first 100 cuboids, C[1],...,C[100], is
-   723581599.
+   The combined volume of the first 100 cuboids, C[1],...,C[100], is 723581599.
 
    What is the combined volume of all 50000 cuboids, C[1],...,C[50000] ?
 
@@ -6230,8 +6219,7 @@ Problem 254
    Define sf(n) as the sum of the digits of f(n). So sf(342) = 3 + 2 = 5.
 
    Define g(i) to be the smallest positive integer n such that sf(n) = i.
-   Though sf(342) is 5, sf(25) is also 5, and it can be verified that g(5) is
-   25.
+   Though sf(342) is 5, sf(25) is also 5, and it can be verified that g(5) is 25.
 
    Define sg(i) as the sum of the digits of g(i). So sg(5) = 2 + 5 = 7.
 
@@ -6484,8 +6472,10 @@ Give that length as your answer, rounded to three decimal places.
 
 Note: For convenience, the elevation function shown above is repeated
 below, in a form suitable for most programming languages:
-h=( 5000-0.005*(x*x+y*y+x*y)+12.5*(x+y) ) * exp(
--abs(0.000001*(x*x+y*y)-0.0015*(x+y)+0.7) )
+
+```php
+h=( 5000-0.005*(x*x+y*y+x*y)+12.5*(x+y) ) * exp(-abs(0.000001*(x*x+y*y)-0.0015*(x+y)+0.7) )
+```
 
 Answer: a5921e175a44d31e7f82f7f9a61a36af
 
@@ -6647,14 +6637,14 @@ Problem 268
 Problem 269
 ===========
 
-A root or zero of a polynomial P(x) is a solution to the equation P(x) =
-0.
+A root or zero of a polynomial P(x) is a solution to the equation P(x) = 0.
+
 Define P[n] as the polynomial whose coefficients are the digits of n.
 For example, `P[5703](x)` = 5x^3 + 7x^2 + 3.
 
 We can see that:
 
-```
+```text
 P[n](0) is the last digit of n,
 P[n](1) is the sum of the digits of n,
 P[n](10) is n itself.
@@ -6771,9 +6761,8 @@ Problem 274
 
    For example, the divisibility multiplier for 113 is 34.
 
-   f(76275) = 7627 + 5 * 34 = 7797 : 76275 and 7797 are both divisible by 113
-   f(12345) = 1234 + 5 * 34 = 1404 : 12345 and 1404 are both not divisible by
-   113
+   `f(76275) = 7627 + 5 * 34 = 7797` : 76275 and 7797 are both divisible by 113
+   `f(12345) = 1234 + 5 * 34 = 1404` : 12345 and 1404 are both not divisible by 113
 
    The sum of the divisibility multipliers for the primes that are coprime to
    10 and less than 1000 is 39517. What is the sum of the divisibility
@@ -6864,21 +6853,19 @@ Problem 278
 
    Given the values of integers 1 < a[1] < a[2] <... < a[n], consider the
    linear combination
-   q[1]a[1] + q[2]a[2] + ... + q[n]a[n] = b, using only integer values q[k] ≥
-   0.
+   q[1]a[1] + q[2]a[2] + ... + q[n]a[n] = b, using only integer values q[k] ≥ 0.
 
    Note that for a given set of a[k], it may be that not all values of b are
    possible.
    For instance, if a[1] = 5 and a[2] = 7, there are no q[1] ≥ 0 and q[2] ≥ 0
    such that b could be
    1, 2, 3, 4, 6, 8, 9, 11, 13, 16, 18 or 23.
-   In fact, 23 is the largest impossible value of b for a[1] = 5 and a[2] =
-   7.
+   In fact, 23 is the largest impossible value of b for a[1] = 5 and a[2] = 7.
+
    We therefore call f(5, 7) = 23.
    Similarly, it can be shown that f(6, 10, 15)=29 and f(14, 22, 77) = 195.
 
-   Find ∑ f(p*q,p*r,q*r), where p, q and r are prime numbers and p < q < r <
-   5000.
+   Find ∑ f(p*q,p*r,q*r), where p, q and r are prime numbers and p < q < r < 5000.
 
    
    Answer: 7e680606b5e9890a19894dbdbbbd102a
@@ -6965,8 +6952,7 @@ Problem 283
    ratio is equal to 2.
 
    Find the sum of the perimeters of all integer sided triangles for which
-   the area/perimeter ratios are equal to positive integers not exceeding
-   1000.
+   the area/perimeter ratios are equal to positive integers not exceeding 1000.
 
    
    Answer: 08afda4bc05c8f3ef71c9ffea1ddc0c8
@@ -8274,11 +8260,13 @@ For example,
 with e = 2.7182818... being Euler's constant.
 
    It can be shown that a(n) is of the form (A(n) e + B(n))/(n!) for integers A(n) and B(n).
-                                                  
+
 For example:
-   
+
+```text
     a(10) = _328161643 e − 652694486_.
                       10!
+```
 
 Find A(10^9) + B(10^9) and give your answer mod 77 777 777.
 
@@ -9188,7 +9176,7 @@ In the applet to the right you can drag the points P[0], P[1], P[2] and
 P[3] to see what the Bézier curve (green curve) defined by those points
 looks like. You can also drag the point Q[0] along the segment P[0]P[1].
 
-**NOTE: The applet is currently unavailable**
+**NOTE**: The applet is currently unavailable
 
 From the construction it is clear that the Bézier curve will be tangent to
 the segments P[0]P[1] in P[0] and P[2]P[3] in P[3].
@@ -10512,8 +10500,8 @@ Problem 414
    numbers.
    However, it can be shown that for 5 digits and a base b = 6t+3≠9, a
    Kaprekar constant exists.
-   E.g. base 15: (10,4,14,9,5)[15]
-   base 21: (14,6,20,13,7)[21]
+   E.g. base 15: `(10,4,14,9,5)[15]`
+   base 21: `(14,6,20,13,7)[21]`
 
 Define C[b] to be the Kaprekar constant in base b for 5 digits.Define the
 function sb(i) to be
@@ -11583,8 +11571,8 @@ Problem 453
 
    For example, Q(2, 2) = 94 as can be seen below:
 
-   It can also be verified that Q(3, 7) = 39590, Q(12, 3) = 309000 and Q(123,
-   45) = 70542215894646.
+   It can also be verified that Q(3, 7) = 39590, Q(12, 3) = 309000 and Q(123, 45)
+   = 70542215894646.
 
    Find Q(12345, 6789) mod 135707531.
 
@@ -11959,8 +11947,7 @@ Problem 467
 
    Let f(n) be the smallest positive integer that is a common superinteger of
    P[n] and C[n].
-   For example, f(10) = 2357246891352679, and f(100) mod 1 000 000 007 =
-   771661825.
+   For example, f(10) = 2357246891352679, and f(100) mod 1 000 000 007 = 771661825.
 
    Find f(10 000) mod 1 000 000 007.
 
@@ -12261,15 +12248,17 @@ Let us consider mixtures of three substances: A, B and C. A mixture can be descr
 For the purposes of this problem, we cannot separate the individual components from a mixture. However, we can combine different amounts of different mixtures to form mixtures with new ratios.
 
 For example, say we have three mixtures with ratios `(3 : 0 : 2)`, `(3 : 6 : 11)` and `(3 : 3 : 4)`. By mixing 10 units of the first, 20 units of the second and 30 units of the third, we get a new mixture with ratio `(6 : 5 : 9)`, since:
-```
+```text
 (10·3/5 + 20·3/20 + 30·3/10 : 10·0/5 + 20·6/20 + 30·3/10 : 10·2/5 + 20·11/20 + 30·4/10) = (18 : 15 : 27) = (6 : 5 : 9)
 ```
+
 However, with the same three mixtures, it is impossible to form the ratio `(3 : 2 : 1)`, since the amount of B is always less than the amount of C.
 
 Let _n_ be a positive integer. Suppose that for every triple of integers `(a, b, c)` with `0 ≤ a, b, c ≤ n` and `gcd(a, b, c) = 1`, we have a mixture with ratio `(a : b : c)`. Let M(_n_) be the set of all such mixtures.
 
 For example, M(2) contains the 19 mixtures with the following ratios:
-```
+
+```text
 {(0 : 0 : 1), (0 : 1 : 0), (0 : 1 : 1), (0 : 1 : 2), (0 : 2 : 1), 
 (1 : 0 : 0), (1 : 0 : 1), (1 : 0 : 2), (1 : 1 : 0), (1 : 1 : 1), 
 (1 : 1 : 2), (1 : 2 : 0), (1 : 2 : 1), (1 : 2 : 2), (2 : 0 : 1), 
@@ -12308,7 +12297,7 @@ Problem 480
 
 Consider all the words which can be formed by selecting letters, in any order, from the phrase:
 
-**thereisasyetinsufficientdataforameaningfulanswer**
+> thereisasyetinsufficientdataforameaningfulanswer
 
 Suppose those with 15 letters or less are listed in alphabetical order and numbered sequentially starting at 1.
 The list would include:
