@@ -4499,7 +4499,7 @@ Problem 182
    An issue when choosing e is that there should not be too many unconcealed
    messages.
    For instance, let p=19 and q=37.
-   Then n=19*37=703 and φ=18*36=648.
+   Then n=19\*37=703 and φ=18\*36=648.
    If we choose e=181, then, although gcd(181,648)=1 it turns out that all
    possible messages
    m (0≤m≤n-1) are unconcealed when calculating m^e mod n.
@@ -5323,7 +5323,7 @@ Problem 216
 
    Consider numbers t(n) of the form t(n) = 2n^2-1 with n > 1.
    The first such numbers are 7, 17, 31, 49, 71, 97, 127 and 161.
-   It turns out that only 49 = 7*7 and 161 = 7*23 are not prime.
+   It turns out that only 49 = 7\*7 and 161 = 7\*23 are not prime.
    For n ≤ 10000 there are 2202 numbers t(n) that are prime.
 
    How many numbers t(n) are prime for n ≤ 50,000,000 ?
@@ -6865,7 +6865,8 @@ Problem 278
    We therefore call f(5, 7) = 23.
    Similarly, it can be shown that f(6, 10, 15)=29 and f(14, 22, 77) = 195.
 
-   Find ∑ f(p*q,p*r,q*r), where p, q and r are prime numbers and p < q < r < 5000.
+Find ∑ f(p\*q,p\*r,q\*r), where p, q and r are prime numbers and
+p < q < r < 5000.
 
    
    Answer: 7e680606b5e9890a19894dbdbbbd102a
@@ -7760,7 +7761,7 @@ meter wall enclosing the 250 000 m^2 area theenclosed-area/wall-length
 ratio is 125.
 Although not allowed , but to get an idea if this is anything better: if
 you place a circle inside the square area touching the four sides the area
-will be equal to π*250^2 m^2 and the perimeter will be π*500 m, so the
+will be equal to π\*250^2 m^2 and the perimeter will be π\*500 m, so the
 enclosed-area/wall-length ratio will also be 125.
 
 However, if you cut off from the square four triangles with sides 75 m, 75
@@ -8718,7 +8719,7 @@ Problem 347
 
 
 The largest integer ≤ 100 that is only divisible by both the primes 2 and
-3 is 96, as 96=32*3=2^5*3.For two distinct primes p and q let M(p,q,N) be
+3 is 96, as 96=32\*3=2^5\*3.For two distinct primes p and q let M(p,q,N) be
 the largest positive integer ≤N only divisibleby both p and q and
 M(p,q,N)=0 if such a positive integer does not exist.
 
@@ -9229,7 +9230,7 @@ Problem 365
 
    Let M(n,k,m) denote the binomial coefficient C(n,k) modulo m.
 
-   Calculate ∑M(10^18,10^9,p*q*r) for 1000<p<q<r<5000 and p,q,r prime.
+   Calculate ∑M(10^18,10^9,p\*q\*r) for 1000<p<q<r<5000 and p,q,r prime.
 
    
    Answer: 53addf69042b0cefbeb94f3bd3224918
@@ -11523,16 +11524,19 @@ Problem 451
    2, 4, 7, 8, 11, 13, 14.
    The modular inverses of these numbers modulo 15 are: 1, 8, 4, 13, 2, 11,
    7, 14
-   because
-   1*1 mod 15=1
-   2*8=16 mod 15=1
-   4*4=16 mod 15=1
-   7*13=91 mod 15=1
-   11*11=121 mod 15=1
-   14*14=196 mod 15=1
 
-   Let I(n) be the largest positive number m smaller than n-1 such that the
-   modular inverse of m modulo n equals m itself.
+because:
+
+*   1*1 mod 15=1
+*   2*8=16 mod 15=1
+*   4*4=16 mod 15=1
+*   7*13=91 mod 15=1
+*   11*11=121 mod 15=1
+*   14*14=196 mod 15=1
+
+Let I(n) be the largest positive number m smaller than n-1 such that the
+modular inverse of m modulo n equals m itself.
+
    So I(15)=11.
    Also I(100)=51 and I(7)=1.
 
