@@ -1,0 +1,814 @@
+
+@@ -499,7 +470,7 @@ than n and it is called abundant if this sum exceeds n.
+ 
+ As 12 is the smallest abundant number, 1 + 2 + 3 + 4 + 6 = 16, the
+ smallest number that can be written as the sum of two abundant numbers is
+-24\. By mathematical analysis, it can be shown that all integers greater
++24. By mathematical analysis, it can be shown that all integers greater
+ than 28123 can be written as the sum of two abundant numbers. However,
+ this upper limit cannot be reduced any further by analysis even though it
+ is known that the greatest number that cannot be expressed as the sum of
+
+
+@@ -1006,14 +925,13 @@ consecutive primes?
+ 
+ Answer: 73229bab6c5dc1c7cf7a4fa123caf6bc
+ 
+-Problem 51
+-==========
++# Problem 51
+ 
+-By replacing the 1st digit of the 2-digit number *3, it turns out that
++By replacing the 1st digit of the 2-digit number \*3, it turns out that
+ six of the nine possible values: 13, 23, 43, 53, 73, and 83, are all
+ prime.
+ 
+-By replacing the 3rd and 4th digits of 56**3 with the same digit, this
++By replacing the 3rd and 4th digits of 56\*\*3 with the same digit, this
+ 5-digit number is the first example having seven primes among the ten
+ generated numbers, yielding the family: 56003, 56113, 56333, 56443, 56663,
+ 56773, and 56993. Consequently 56003, being the first member of this
+
+@@ -1208,13 +1112,11 @@ along both diagonals first falls below 10%?
+ 
+ Answer: b62fc92a2561538525c89be63f36bf7b
+ 
+-
+-Problem 59
+-==========
++# Problem 59
+ 
+ Each character on a computer is assigned a unique code and the preferred
+ standard is ASCII (American Standard Code for Information Interchange).
+-For example, uppercase A = 65, asterisk (*) = 42, and lowercase k = 107.
++For example, uppercase A = 65, asterisk (\*) = 42, and lowercase k = 107.
+ 
+ A modern encryption method is to take a text file, convert the bytes to
+ ASCII, then XOR each byte with a given value, taken from a secret key. The
+
+@@ -2127,13 +1968,10 @@ How many starting numbers below ten million will arrive at 89?
+ 
+ Answer: 6cee918c0612bccc2dac03d05e07035f
+ 
+-
+-Problem 93
+-==========
+-
++# Problem 93
+ 
+ By using each of the digits from the set, {1, 2, 3, 4}, exactly once, and
+-making use of the four arithmetic operations (+, −, *, /) and
++making use of the four arithmetic operations (+, −, \*, /) and
+ brackets/parentheses, it is possible to form different positive integer
+ targets.
+ 
+
+@@ -2687,9 +2486,9 @@ and the sum of these primes is S(4, 1) = 22275. It turns out that for d =
+ N(4, 0) = 13 such cases.
+ 
+ In the same way we obtain the following results for 4-digit primes.
+-   
++  
+ | Digit, d | M(4, d) | N(4, d) | S(4,d) |
+-| -------- | --------| ------- | ------ |
++\| -------- \| --------\| ------- \| ------ \|
+ | 0        | 2       | 13      | 67061  |
+ | 1        | 3       | 9       | 22275  |
+ | 2        | 3       | 1       | 2221   |
+
+
+@@ -3328,7 +3034,7 @@ Surprisingly,
+ The corresponding values of x for the first five natural numbers are shown
+ below.
+ 
+-|     x     | `A[F](x)` |
++| x         | `A[F](x)` |
+ | --------- | --------- |
+ | √2−1      | 1         |
+ | 1/2       | 2         |
+
+
+@@ -3633,7 +3303,7 @@ Problem 149
+    First, generate four million pseudo-random numbers using a specific form
+    of what is known as a "Lagged Fibonacci Generator":
+ 
+-   For 1 ≤ k ≤ 55, s[k] = [100003 − 200003k + 300007k^3] \(modulo 1000000) − 500000.
++   For 1 ≤ k ≤ 55, s[k] = [100003 − 200003k + 300007k^3] (modulo 1000000) − 500000.
+ 
+    For 56 ≤ k ≤ 4000000, s[k] = \[s[k−24] + s[k−55] + 1000000] (modulo 1000000) − 500000.
+ 
+
+@@ -3669,18 +3336,18 @@ as follows:
+ 
+ t := 0
+ for k = 1 up to k = 500500:
+-    t := (615949*t + 797807) modulo 2^20
+-    s[k] := t−2^19
++    t := (615949\*t + 797807) modulo 2^20
++    s[k] &#x3A;= t−2^19
+ 
+ Thus: s[1] = 273519, s[2] = −153582, s[3] = 450905 etc
+ 
+
+@@ -3777,7 +3438,7 @@ In fact, 5 has six divisors such that the real part is positive: {1, 1 +
+ The following is a table of all of the divisors for the first five
+ positive rational integers:
+ 
+-|  n  | Gaussian integer divisors with positive real part | Sum s(n) of these divisors |
++| n   | Gaussian integer divisors with positive real part | Sum s(n) of these divisors |
+ | --- | ------------------------------------------------- | -------------------------- |
+ | 1   | 1                                                 | 1                          |
+ | 2   | 1, 1+i, 1-i, 2                                    | 5                          |
+
+
+@@ -3964,9 +3608,9 @@ number is arrived at that is less than 10. Thus the digital root of 467 is 8.
+ We shall call a Digital Root Sum (DRS) the sum of the digital roots of the
+ individual factors of our number.
+ The chart below demonstrates all of the DRS values for 24.
+-   
++  
+ | Factorisation | Digital Root Sum |
+-| ------------- | ---------------- |
++\| ------------- \| ---------------- \|
+ | 2x2x2x3       | 9                |
+ | 2x3x4         | 9                |
+ | 2x2x6         | 10               |
+
+
+@@ -4117,14 +3741,14 @@ Problem 165
+    intersection point of L[1] and L[2] if T is the only common point of L[1]
+    and L[2] and T is an interior point of both segments.
+ 
+-   Consider the three segments L[1], L[2], and L[3]:
++   Consider the three segments L[1], L[2], and L[3]&#x3A;
+ 
+-   L[1]: (27, 44) to (12, 32)
+-   L[2]: (46, 53) to (17, 62)
+-   L[3]: (46, 70) to (22, 40)
++   L[1]&#x3A; (27, 44) to (12, 32)
++   L[2]&#x3A; (46, 53) to (17, 62)
++   L[3]&#x3A; (46, 70) to (22, 40)
+ 
+    It can be verified that line segments L[2] and L[3] have a true
+-   intersection point. We note that as the one of the end points of L[3]:
++   intersection point. We note that as the one of the end points of L[3]&#x3A;
+    (22,40) lies on L[1] this is not considered to be a true point of
+    intersection. L[1] and L[2] have no common point. So among the three line
+    segments, we find one true intersection point.
+
+
+@@ -4135,9 +3759,9 @@ Problem 165
+ 
+    s[0] = 290797
+ 
+-   s[n+1] = s[n]×s[n] \(modulo 50515093)
++   s[n+1] = s[n]×s[n] (modulo 50515093)
+ 
+-   t[n] = s[n] \(modulo 500)
++   t[n] = s[n] (modulo 500)
+ 
+    To create each line segment, we use four consecutive numbers t[n]. That
+    is, the first line segment is given by:
+
+
+@@ -4354,13 +3944,10 @@ Problem 175
+    f(n)/f(n-1)=123456789/987654321.
+ 
+    Give your answer as comma separated integers, without any whitespaces.
+-   
++  
+    Answer: 796dddd004c3465229058072f5b4583e
+ 
+-
+-Problem 176
+
+
+@@ -4410,25 +3992,18 @@ Problem 178
+    A pandigital number contains every decimal digit from 0 to 9 at least
+    once.
+    How many pandigital step numbers less than 10^40 are there?
+-   
++  
+    Answer: 2ffddfa898fa5df6321aebea84d4f33f
+ 
+-
+-Problem 179
+-===========
+-
++# Problem 179
+ 
+    Find the number of integers 1 < n < 10^7, for which n and n + 1 have the
+
+
+@@ -4499,7 +4067,7 @@ Problem 182
+    An issue when choosing e is that there should not be too many unconcealed
+    messages.
+    For instance, let p=19 and q=37.
+-   Then n=19*37=703 and φ=18*36=648.
++   Then n=19_37=703 and φ=18_36=648.
+    If we choose e=181, then, although gcd(181,648)=1 it turns out that all
+    possible messages
+    m (0≤m≤n-1) are unconcealed when calculating m^e mod n.
+
+
+-
+-Problem 186
+-===========
+-
++# Problem 186
+ 
+ Here are the records from a busy telephone system with one million users:
+ 
+-| RecNr | Caller   | Called  |
+-| ----- | -------- | ------- |
+-| 1     | 200007   | 100053  |
+-| 2     | 600183   | 500439  |
+-| 3     | 600863   | 701497  |
+-| …     | …        | …       |
++| RecNr | Caller | Called |
++| ----- | ------ | ------ |
++| 1     | 200007 | 100053 |
++| 2     | 600183 | 500439 |
++| 3     | 600863 | 701497 |
++| …     | …      | …      |
+ 
+
+ The telephone number of the caller and the called number in record n are
+ Caller(n) = S[2n-1] and Called(n) = S[2n] where S[1,2,3,...] come from the
+ "Lagged Fibonacci Generator":
+ 
+-For 1 ≤ k ≤ 55, S[k] = [100003 - 200003k + 300007k^3] \(modulo 1000000)
++For 1 ≤ k ≤ 55, S[k] = [100003 - 200003k + 300007k^3] (modulo 1000000)
+ For 56 ≤ k, S[k] = \[S[k-24] + S[k-55]] (modulo 1000000)
+ 
+ If Caller(n) = Called(n) then the user is assumed to have misdialled and
+
+@@ -4687,16 +4233,13 @@ Problem 188
+    a↑↑(k+1) = a^(a↑↑k).
+ 
+    Thus we have e.g. 3↑↑2 = 3^3 = 27, hence 3↑↑3 = 3^27 = 7625597484987 and
+-   3↑↑4 is roughly 10^3.6383346400240996*10^12.
++   3↑↑4 is roughly 10^3.6383346400240996\*10^12.
+ 
+    Find the last 8 digits of 1777↑↑1855.
+
+
+------
+
+ Let S[m] = (x[1], x[2], ... , x[m]) be the m-tuple of positive real
+ numbers with x[1] + x[2] + ... + x[m] = m for which
+ `P[m] = x[1] * x[2]^2 * ... * x[m]^m` is maximised.
+ 
+-   For example, it can be verified that [P[10]] = 4112 ([ ] is the integer
++   For example, it can be verified that \[P[10]] = 4112 ([ ] is the integer
+    part function).
+ 
+-   Find Σ[P[m]] for 2 ≤ m ≤ 15.
++   Find Σ\[P[m]] for 2 ≤ m ≤ 15.
+ 
+
+-===========
+-
++# Problem 196
+ 
+    Build a triangle from all positive integers in the following way:
+-   
++  
+    ![](files/p_196.png)
+ 
+
+@@ -5237,7 +4701,7 @@ Problem 212
+ 
+    For 1 ≤ k ≤ 55, S[k] = [100003 - 200003k + 300007k^3]   (modulo 1000000)
+ 
+-   For 56 ≤ k, S[k] = [S[k-24] + S[k-55]]   (modulo 1000000)
++   For 56 ≤ k, S[k] = \[S[k-24] + S[k-55]]   (modulo 1000000)
+ 
+    Thus, C[1] has parameters {(7,53,183),(94,369,56)}, C[2] has parameters
+    {(2383,3563,5079),(42,212,344)}, and so on.
+
+
+-Problem 216
+-===========
+-
++# Problem 216
+ 
+    Consider numbers t(n) of the form t(n) = 2n^2-1 with n > 1.
+    The first such numbers are 7, 17, 31, 49, 71, 97, 127 and 161.
+-   It turns out that only 49 = 7*7 and 161 = 7*23 are not prime.
++   It turns out that only 49 = 7_7 and 161 = 7_23 are not prime.
+    For n ≤ 10000 there are 2202 numbers t(n) that are prime.
+ 
+    How many numbers t(n) are prime for n ≤ 50,000,000 ?
+ 
+
+-Problem 228
+-===========
++# Problem 228
+ 
+ Let S[n] be the regular n-sided polygon – or shape – whose vertices v[k]
+-\(k = 1,2,…,n) have coordinates:
++(k = 1,2,…,n) have coordinates:
+
+
+@@ -5961,13 +5326,13 @@ by the sequence LULUR we reach the configuration (E):
+ (S) ![](files/p_244_start.gif), (E) ![](files/p_244_example.gif)
+ 
+ For each path, its checksum is calculated by (pseudocode):
+-   
++  
+     checksum = 0
+     checksum = (checksum × 243 + m[1]) mod 100 000 007
+     checksum = (checksum × 243 + m[2]) mod 100 000 007
+        …
+     checksum = (checksum × 243 + m[n]) mod 100 000 007
+-    
++  
+ where m[k] is the ASCII value of the k^th letter in the move sequence and
+ the ASCII values for the moves are:
+ 
+
+@@ -6143,9 +5481,9 @@ hole on the given set of points.
+ For our example, we used the first 20 points (T[2k−1], T[2k]), for
+ k = 1,2,…,20, produced with the pseudo-random number generator:
+ 
+-                                S[0]   = 290797
+-                                S[n+1] = S[n]^2 mod 50515093
+-                                T[n]   = ( S[n] mod 2000 ) − 1000
++                        S[0]   = 290797
++                        S[n+1] = S[n]^2 mod 50515093
++                        T[n]   = ( S[n] mod 2000 ) − 1000
+ 
+ i.e. (527, 144), (−488, 732), (−454, −947), …
+ 
+@@ -6174,9 +5509,9 @@ increases up to about eleven or twelve, then tends to drop again before
+ finishing at a single segment (all pieces placed).
+ 
+ For example:
+-   
++  
+ | Piece Placed | Segments So Far |
+-| ------------ | --------------- |
++\| ------------ \| --------------- \|
+ | 12           | 1               |
+ | 4            | 2               |
+ | 29           | 3               |
+
+
+-Problem 274
+-===========
+-
++# Problem 274
+ 
+    For each integer p > 1 coprime to 10 there is a positive divisibility
+    multiplier m < p which preserves divisibility by p for the following
+    function on any positive integer, n:
+ 
+-   f(n) = (all but the last digit of n) + (the last digit of n) * m
++   f(n) = (all but the last digit of n) + (the last digit of n) \* m
+ 
+    That is, if m is the divisibility multiplier for p, then f(n) is divisible
+    by p if and only if n is divisible by p.
+
+@@ -6865,26 +6113,18 @@ Problem 278
+    We therefore call f(5, 7) = 23.
+    Similarly, it can be shown that f(6, 10, 15)=29 and f(14, 22, 77) = 195.
+ 
+-   Find ∑ f(p*q,p*r,q*r), where p, q and r are prime numbers and p < q < r < 5000.
++   Find ∑ f(p_q,p_r,q\*r), where p, q and r are prime numbers and p < q < r < 5000.
+ 
+-   
+    Answer: 7e680606b5e9890a19894dbdbbbd102a
+ 
+-
+-Problem 279
+-===========
+
+
+@@ -7061,22 +6277,19 @@ image.
+ For a positive integer N, define D[N] as the 2^N×2^N image with the
+ following coloring scheme:
+ 
+-* the pixel with coordinates x = 0, y = 0 corresponds to the bottom left
+-   pixel,
+-* if (x - 2^N-1)^2 + (y - 2^N-1)^2 ≤ 2^2N-2 then the pixel is black,
+-* otherwise the pixel is white.
++*   the pixel with coordinates x = 0, y = 0 corresponds to the bottom left
++     pixel,
++*   if (x - 2^N-1)^2 + (y - 2^N-1)^2 ≤ 2^2N-2 then the pixel is black,
++*   otherwise the pixel is white.
+ 
+ What is the length of the minimal sequence describing D[24] ?
+ 
+
+-===========
+-
++# Problem 288
+ 
+    For any prime p the number N(p,q) is defined byN(p,q) = ∑[n=0 to q]
+-   T[n]*p^n
++   T[n]\*p^n
+    with T[n] generated by the following random number generator:
+ 
+    S[0] = 290797
+
+
+@@ -7227,9 +6416,9 @@ We call the convex area enclosed by two circles a lenticular hole if:
+ 
+ Consider the circles:
+ 
+-   C[0]: x^2+y^2=25
+-   C[1]: (x+4)^2+(y-4)^2=1
+-   C[2]: (x-12)^2+(y-4)^2=65
++   C[0]&#x3A; x^2+y^2=25
++   C[1]&#x3A; (x+4)^2+(y-4)^2=1
++   C[2]&#x3A; (x-12)^2+(y-4)^2=65
+ 
+    The circles C[0], C[1] and C[2] are drawn in the picture below.
+ 
+
+@@ -7760,7 +6896,7 @@ meter wall enclosing the 250 000 m^2 area theenclosed-area/wall-length
+ ratio is 125.
+ Although not allowed , but to get an idea if this is anything better: if
+ you place a circle inside the square area touching the four sides the area
+-will be equal to π*250^2 m^2 and the perimeter will be π*500 m, so the
++will be equal to π_250^2 m^2 and the perimeter will be π_500 m, so the
+ enclosed-area/wall-length ratio will also be 125.
+ 
+ ----
+ However, if you cut off from the square four triangles with sides 75 m, 75
+
+ Let p = p[1] p[2] p[3] ... be an infinite sequence of random digits,
+ selected from {0,1,2,3,4,5,6,7,8,9} with equal probability.
+ It can be seen that p corresponds to the real number 0.p[1] p[2] p[3] ....
+ It can also be seen that choosing a random real number from the interval
+-[0,1) is equivalent to choosing an infinite sequence of random digits
++\[0,1) is equivalent to choosing an infinite sequence of random digits
+ selected from {0,1,2,3,4,5,6,7,8,9} with equal probability.
+ 
+ For any positive integer n with d decimal digits, let k be the smallest
+
+
++# Problem 337
+ 
+-Problem 337
+-===========
+-
+-
+-Let {a[1], a[2],..., a[n]} be an integer sequence of length n such that:
++Let {a[1], a[2],..., a[n]} be an integer sequence of length n such that:
+ 
+
+@@ -10887,8 +10879,8 @@ state becomes [1, 3, 10, 24, 51, 75].
+ Starting from the initial configuration (t[0], t[1], …, t[10 000 000]),
+ find the final state.
+ Give as your answer the sum of the squares of the elements of the final
+-state. For example, if the final state is [1, 2, 3] then 14 ( = 1^2 + 2^2
+-+ 3^2) is your answer.
++state. For example, if the final state is [1, 2, 3] then 14 ( = 1^2 + 2^2 + 3^2)
++is your answer.
+ 
+
+
+@@ -11232,11 +11224,9 @@ Problem 439
+ 
+    Let d(k) be the sum of all divisors of k.
+    We define the function S(N) = ∑[1≤i≤N] ∑[1≤j≤N] d(i·j).
+-   For example, S(3) = d(1) + d(2) + d(3) + d(2) + d(4) + d(6) + d(3) + d(6)
+-   + d(9) = 59.
++   For example, S(3) = d(1) + d(2) + d(3) + d(2) + d(4) + d(6) + d(3) + d(6) + d(9) = 59.
+ 
+-   You are given that S(10^3) = 563576517282 and S(10^5) mod 10^9 =
+-   215766508.
++   You are given that S(10^3) = 563576517282 and S(10^5) mod 10^9 = 215766508.
+
+
+
+-Problem 347
+-===========
+-
++# Problem 347
+ 
+ The largest integer ≤ 100 that is only divisible by both the primes 2 and
+-3 is 96, as 96=32*3=2^5*3.For two distinct primes p and q let M(p,q,N) be
++3 is 96, as 96=32_3=2^5_3.For two distinct primes p and q let M(p,q,N) be
+ the largest positive integer ≤N only divisibleby both p and q and
+ M(p,q,N)=0 if such a positive integer does not exist.
+ 
+
+@@ -9021,7 +8028,7 @@ The smallest cyclic number is the 6-digit number 142857:
+     142857 × 6 = 857142
+ 
+ The next cyclic number is 0588235294117647 with 16 digits:
+-   
++  
+     0588235294117647 × 1 = 0588235294117647
+     0588235294117647 × 2 = 1176470588235294
+     0588235294117647 × 3 = 1764705882352941
+
+@@ -9066,7 +8069,7 @@ Eventually, every person in the line gets a room in the hotel.
+ 
+ Define P(f, r) to be n if person n occupies room r in floor f, and 0 if no
+ person occupies the room. Here are a few examples:
+-   
++  
+     P(1, 1) = 1
+     P(1, 2) = 3
+     P(2, 1) = 2
+
+
+@@ -9122,8 +8119,8 @@ in {T[n]}, so 14 is not an element of {A[n]}.
+ 
+ The first several terms of A[n] are given as follows:
+ 
+-                 n     0  1  2  3  4  5  6  7  8   9   10  11  12  …
+-                 A[n]  0  1  2  3  4  5  6  9  10  11  12  13  18  …
++         n     0  1  2  3  4  5  6  7  8   9   10  11  12  …
++         A[n]  0  1  2  3  4  5  6  9  10  11  12  13  18  …
+ 
+ We can also verify that A[100] = 3251 and A[1000] = 80852364498.
+ 
+
+@@ -9155,8 +8150,7 @@ Find S(10 000 000 000).
+ 
+ Answer: b62f0d524bec8653ba7b8a2cab70260b
+ 
+-Problem 363
+-===========
++# Problem 363
+ 
+ A cubic Bézier curve is defined by four points: P[0], P[1], P[2] and P[3].
+ 
+@@ -9176,7 +8170,7 @@ In the applet to the right you can drag the points P[0], P[1], P[2] and
+ P[3] to see what the Bézier curve (green curve) defined by those points
+ looks like. You can also drag the point Q[0] along the segment P[0]P[1].
+ 
+-**NOTE**: The applet is currently unavailable
++__NOTE__: The applet is currently unavailable
+ 
+
+@@ -9184,27 +8178,25 @@ the segments P[0]P[1] in P[0] and P[2]P[3] in P[3].
+ A cubic Bézier curve with P[0]=(1,0), P[1]=(1,v), P[2]=(v,1) and
+ P[3]=(0,1) is used to approximate a quarter circle.
+ The value v>0 is chosen such that the area enclosed by the lines OP[0],
+-OP[3] and the curve is equal to ^π/[4] \(the area of the quarter circle).
++OP[3] and the curve is equal to ^π/[4] (the area of the quarter circle).
+ 
+ By how many percent does the length of the curve differ from the length of
+ the quarter circle?
+-That is, if L is the length of the curve, calculate 100*^(L-π/2)/[(π/2)].
++That is, if L is the length of the curve, calculate 100\*^(L-π/2)/[(π/2)].
+ Give your answer rounded to 10 digits behind the decimal point.
+ 
+ Answer: 2bc63386b7cccc64c67f90e719936143
+ 
++# Problem 365
+ 
+    The binomial coeffient C(10^18,10^9) is a number with more than 9 billion
+    (9×10^9) digits.
+ 
+    Let M(n,k,m) denote the binomial coefficient C(n,k) modulo m.
+ 
+-   Calculate ∑M(10^18,10^9,p*q*r) for 1000<p<q<r<5000 and p,q,r prime.
++   Calculate ∑M(10^18,10^9,p_q_r) for 1000<p<q<r<5000 and p,q,r prime.
+ 
+-   
+    Answer: 53addf69042b0cefbeb94f3bd3224918
+ 
++# Problem 391
+ 
+    Let s[k] be the number of 1’s when writing the numbers from 0 to k in
+    binary.
+    For example, writing 0 to 5 in binary, we have 0, 1, 10, 11, 100, 101.
+    There are seven 1’s, so s[5] = 7.
+-   The sequence S = {s[k] : k ≥ 0} starts {0, 1, 2, 4, 5, 7, 9, 12, ...}.
++   The sequence S = {s[k] &#x3A; k ≥ 0} starts {0, 1, 2, 4, 5, 7, 9, 12, ...}.
+ 
+    A game is played by two players. Before the game starts, a number n is
+    chosen. A counter c starts at 0. At each turn, the player chooses a number
+
+
+-Problem 421
+-===========
+-
++# Problem 421
+ 
+    Numbers of the form n^15+1 are composite for every integer n > 1.
+    For positive integers n and m let s(n,m) be defined as the sum of the
+@@ -10690,21 +9470,17 @@ Problem 421
+    Also 10^15+1 = 7×11×13×211×241×2161×9091.
+    So s(10,100) = 31 and s(10,1000) = 483.
+ 
+-   Find &Sum; s(n,10^8) for 1 ≤ n ≤ 10^11.
++   Find ∑ s(n,10^8) for 1 ≤ n ≤ 10^11.
+ 
+
+-Problem 422
+-===========
+-
++# Problem 422
+ 
+ Let H be the hyperbola defined by the equation 12x^2 + 7xy - 12y^2 = 625.
+ 
+ Next, define X as the point (7, 1). It can be seen that X is in H.
+ 
+-Now we define a sequence of points in H, {P[i] : i ≥ 1}, as:
++Now we define a sequence of points in H, {P[i] &#x3A; i ≥ 1}, as:
+ 
+ *   P[1] = (13, 61/4).
+ *   P[2] = (-43/6, -4).
+
+
+-Problem 431
+-===========
++# Problem 431
+ 
+ Fred the farmer arranges to have a new storage silo installed on his farm
+ and having an obsession for all things square he is absolutely devastated
+@@ -11000,7 +9746,7 @@ Fred is not amused and insists that it is removed from his property.
+ Quick thinking Quentin explains that when granular materials are delivered
+ from above a conical slope is formed and the natural angle made with the
+ horizontal is called the angle of repose. For example if the angle of
+-repose, $\alpha = 30$ degrees, and grain is delivered at the centre of the
++repose, $\\alpha = 30$ degrees, and grain is delivered at the centre of the
+ silo then a perfect cone will form towards the top of the cylinder. In the
+ case of this silo, which has a diameter of 6m, the amount of space wasted
+ would be approximately 32.648388556 m^3. However, if grain is delivered at
+
+@@ -11012,9 +9758,9 @@ shows Fred a picture.
+ 
+ We shall let the amount of space wasted in cubic metres be given by
+ $V(x)$. If $x = 1.114785284$, which happens to have three squared decimal
+-places, then the amount of space wasted, $V(1.114785284) \approx 36$.
++places, then the amount of space wasted, $V(1.114785284) \\approx 36$.
+ Given the range of possible solutions to this problem there is exactly one
+-other option: $V(2.511167869) \approx 49$. It would be like knowing that
++other option: $V(2.511167869) \\approx 49$. It would be like knowing that
+ the square is king of the silo, sitting in splendid glory on top of your
+ grain.
+ 
+@@ -11028,15 +9774,12 @@ it.
+ 
+ If Quick thinking Quentin is to satisfy frustratingly fussy Fred the
+ farmer's appetite for all things square then determine the values of $x$
+-for all possible square space wastage options and calculate $\sum x$
++for all possible square space wastage options and calculate $\\sum x$
+ correct to 9 decimal places.
+ 
+
+-Problem 435
+-===========
+-
++# Problem 435
+ 
+ The Fibonacci numbers {f[n], n ≥ 0} are defined recursively as f[n] =
+ f[n-1] + f[n-2] with base cases f[0] = 0 and f[1] = 1.
+@@ -11122,16 +9853,12 @@ Define the polynomials {F[n], n ≥ 0} as `F[n](x)` = ∑f[i]x^i for 0 ≤ i ≤
+ For example, `F[7](x)` = x + x^2 + 2x^3 + 3x^4 + 5x^5 + 8x^6 + 13x^7, and
+ `F[7](11)` = 268357683.
+ 
+-Let n = 10^15. Find the sum [∑[0≤x≤100] `F[n](x)`] mod 1307674368000 (=
++Let n = 10^15. Find the sum \[∑[0≤x≤100] `F[n](x)`] mod 1307674368000 (=
+ 15!).
+ 
+-
+@@ -11483,13 +10155,13 @@ Problem 450
+ 
+    Let $C(R, r)$ be the set of distinct points with integer coordinates on
+    the hypocycloid with radius R and r and for which there is a corresponding
+-   value of t such that $\sin(t)$ and $\cos(t)$ are rational numbers.
++   value of t such that $\\sin(t)$ and $\\cos(t)$ are rational numbers.
+ 
+-   Let $S(R, r) = \sum_{(x,y) \in C(R, r)} |x| + |y|$ be the sum of the
++   Let $S(R, r) = \\sum\_{(x,y) \\in C(R, r)} |x| + |y|$ be the sum of the
+    absolute values of the x and y coordinates of the points in $C(R, r)$.
+ 
+-   Let $T(N) = \sum_{R = 3}^N \sum_{r=1}^{\lfloor \frac {R - 1} 2 \rfloor}
+-   S(R, r)$ be the sum of $S(R, r)$ for R and r positive integers, $R\leq N$
++   Let $T(N) = \\sum_{R = 3}^N \\sum_{r=1}^{\\lfloor \\frac {R - 1} 2 \\rfloor}
++   S(R, r)$ be the sum of $S(R, r)$ for R and r positive integers, $R\\leq N$
+    and $2r < R$.
+ 
+    You are given:
+
+
+@ -11501,7 +10173,7 @@ Problem 450
+      0), (68, 504), (68, -504),
+      (-1356, 1088), (-1356, -1088), (-1500, 1000), (-1500, -1000)}
+ 
+-   Note: (-625, 0) is not an element of C(2500, 1000) because $\sin(t)$ is
++   Note: (-625, 0) is not an element of C(2500, 1000) because $\\sin(t)$ is
+    not a rational number for the corresponding values of t.
+ 
+    S(3, 1) = (|3| + |0|) + (|-1| + |2|) + (|-1| + |0|) + (|-1| + |-2|) = 10
+@@ -11510,13 +10182,9 @@ Problem 450
+ 
+    Find T(10^6).
+ 
+@@ -11524,12 +10192,12 @@ Problem 451
+    The modular inverses of these numbers modulo 15 are: 1, 8, 4, 13, 2, 11,
+    7, 14
+    because
+-   1*1 mod 15=1
+-   2*8=16 mod 15=1
+-   4*4=16 mod 15=1
+-   7*13=91 mod 15=1
+-   11*11=121 mod 15=1
+-   14*14=196 mod 15=1
++   1_1 mod 15=1
++   2_8=16 mod 15=1
++   4_4=16 mod 15=1
++   7_13=91 mod 15=1
++   11_11=121 mod 15=1
++   14_14=196 mod 15=1
+ 
+    Let I(n) be the largest positive number m smaller than n-1 such that the
+    modular inverse of m modulo n equals m itself.
+
+Problem 457
+-===========
+-
++# Problem 457
+ 
+    Let f(n) = n^2 - 3n - 1.
+    Let p be a prime.
+    Let R(p) be the smallest positive integer n such that f(n) mod p^2 = 0 if
+    such an integer n exists, otherwise R(p) = 0.
+ 
+-   Let SR(L) be &Sum;R(p) for all primes not exceeding L.
++   Let SR(L) be ∑R(p) for all primes not exceeding L.
+ 
+    Find SR(10^7).
+ 
++# Problem 463
+ 
+ The function $f$ is defined for all positive integers as follows:
+ 
+@@ -11820,19 +10440,15 @@ The function $f$ is defined for all positive integers as follows:
+ *   $f(4n + 1)=2f(2n + 1) - f(n)$
+ *   $f(4n + 3)=3f(2n + 1) - 2f(n)$
+ 
+-The function $S(n)$ is defined as $\sum_{i=1}^{n}f(i)$.
++The function $S(n)$ is defined as $\\sum\_{i=1}^{n}f(i)$.
+ 
+ $S(8)=22$ and $S(100)=3604$.
+ 
+
+ 
+-Problem 471
+-===========
+-
+-
+-   The triangle ΔABC is inscribed in an ellipse with equation $\frac {x^2}
+-   {a^2} + \frac {y^2} {b^2} = 1$, 0 < 2b < a, a and b integers.
++   The triangle ΔABC is inscribed in an ellipse with equation $\\frac {x^2}
++   {a^2} + \\frac {y^2} {b^2} = 1$, 0 < 2b < a, a and b integers.
+ 
+    Let r(a,b) be the radius of the incircle of ΔABC when the incircle has
+-   center (2b, 0) and A has coordinates $\left( \frac a 2, \frac {\sqrt 3} 2
+-   b\right)$.
++   center (2b, 0) and A has coordinates $\\left( \\frac a 2, \\frac {\\sqrt 3} 2
++   b\\right)$.
+ 
+    For example, r(3,1) = ½, r(6,2) = 1, r(12,3) = 2.
+ 
+-   Let $G(n) = \sum_{a=3}^n \sum_{b=1}^{\lfloor \frac {a - 1} 2 \rfloor} r(a,
++   Let $G(n) = \\sum_{a=3}^n \\sum_{b=1}^{\\lfloor \\frac {a - 1} 2 \\rfloor} r(a,
+    b)$
+ 
+    You are given G(10) = 20.59722222, G(100) = 19223.60980 (rounded to 10
+
+
++# Problem 473
+ 
+-Problem 473
+-===========
+-
+-
+-   Let $\varphi$ be the golden ratio: $\varphi=\frac{1+\sqrt{5}}{2}.$
++   Let $\\varphi$ be the golden ratio: $\\varphi=\\frac{1+\\sqrt{5}}{2}.$
+    Remarkably it is possible to write every positive integer as a sum of
+-   powers of $\varphi$ even if we require that every power of $\varphi$ is
++   powers of $\\varphi$ even if we require that every power of $\\varphi$ is
+    used at most once in this sum.
+    Even then this representation is not unique.
+    We can make it unique by requiring that no powers with consecutive
+    exponents are used and that the representation is finite.
+-   E.g: $2=\varphi+\varphi^{-2}$ and $3=\varphi^{2}+\varphi^{-2}$
++   E.g: $2=\\varphi+\\varphi^{-2}$ and $3=\\varphi^{2}+\\varphi^{-2}$
+ 
+-   To represent this sum of powers of $\varphi$ we use a string of 0's and
++   To represent this sum of powers of $\\varphi$ we use a string of 0's and
+    1's with a point to indicate where the negative exponents start.
+    We call this the representation in the phigital numberbase.
+-   So $1=1_{\varphi}$, $2=10.01_{\varphi}$, $3=100.01_{\varphi}$ and
+-   $14=100100.001001_{\varphi}$.
++   So $1=1_{\\varphi}$, $2=10.01_{\\varphi}$, $3=100.01_{\\varphi}$ and
++   $14=100100.001001_{\\varphi}$.
+    The strings representing 1, 2 and 14 in the phigital number base are
+    palindromic, while the string representating 3 is not.
+    (the phigital point is not the middle character).
+
+
+
+

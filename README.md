@@ -1747,19 +1747,21 @@ Let p(n) represent the number of different ways in which n coins can be
 separated into piles. For example, five coins can separated into piles in
 exactly seven different ways, so p(5)=7.
 
+```text
     OOOOO
-    
+
     OOOO O
-    
+
     OOO OO
-    
+
     OOO O O
-    
+
     OO OO O
-    
+
     OO O O O
-    
+
     O O O O O
+```
 
 Find the least value of n for which p(n) is divisible by one million.
 
@@ -3633,9 +3635,9 @@ Problem 149
    First, generate four million pseudo-random numbers using a specific form
    of what is known as a "Lagged Fibonacci Generator":
 
-   For 1 ≤ k ≤ 55, s[k] = [100003 − 200003k + 300007k^3] \(modulo 1000000) − 500000.
+   For 1 ≤ k ≤ 55, `s[k] = [100003 − 200003k + 300007k^3] (modulo 1000000) − 500000`.
 
-   For 56 ≤ k ≤ 4000000, s[k] = \[s[k−24] + s[k−55] + 1000000] (modulo 1000000) − 500000.
+   For 56 ≤ k ≤ 4000000, `s[k] = [s[k−24] + s[k−55] + 1000000] (modulo 1000000) − 500000`.
 
    Thus, s[10] = −393027 and s[100] = 86613.
 
@@ -4135,9 +4137,9 @@ Problem 165
 
    s[0] = 290797
 
-   s[n+1] = s[n]×s[n] \(modulo 50515093)
+   s[n+1] = `s[n]×s[n] (modulo 50515093)`
 
-   t[n] = s[n] \(modulo 500)
+   t[n] = `s[n] (modulo 500)`
 
    To create each line segment, we use four consecutive numbers t[n]. That
    is, the first line segment is given by:
@@ -4640,8 +4642,8 @@ The telephone number of the caller and the called number in record n are
 Caller(n) = S[2n-1] and Called(n) = S[2n] where S[1,2,3,...] come from the
 "Lagged Fibonacci Generator":
 
-For 1 ≤ k ≤ 55, S[k] = [100003 - 200003k + 300007k^3] \(modulo 1000000)
-For 56 ≤ k, S[k] = \[S[k-24] + S[k-55]] (modulo 1000000)
+For 1 ≤ k ≤ 55, S[k] = `[100003 - 200003k + 300007k^3] (modulo 1000000)`
+For 56 ≤ k, `S[k] = [S[k-24] + S[k-55]] (modulo 1000000)`
 
 If Caller(n) = Called(n) then the user is assumed to have misdialled and
 the call fails; otherwise the call is successful.
@@ -5544,10 +5546,11 @@ Answer: 7b87cd0a96f0f2f12f911cdc66608d95
 Problem 228
 ===========
 
-Let S[n] be the regular n-sided polygon – or shape – whose vertices v[k]
-\(k = 1,2,…,n) have coordinates:
+Let S[n] be the regular n-sided polygon – or shape – whose vertices
+`v[k](k = 1,2,…,n)` have coordinates:
 
 	  x[k]   =   cos( ^2k-1/[n] × 180° )
+
 	  y[k]   =   sin( ^2k-1/[n] × 180° )
 
 Each S[n] is to be interpreted as a filled shape consisting of all points
@@ -6143,9 +6146,11 @@ hole on the given set of points.
 For our example, we used the first 20 points (T[2k−1], T[2k]), for
 k = 1,2,…,20, produced with the pseudo-random number generator:
 
+```text
 				 S[0]   = 290797
 				 S[n+1] = S[n]^2 mod 50515093
 				 T[n]   = ( S[n] mod 2000 ) − 1000
+```
 
 i.e. (527, 144), (−488, 732), (−454, −947), …
 
@@ -6778,10 +6783,10 @@ Problem 275
 Let us define a balanced sculpture of order n as follows:
 
 * A polyomino made up of n+1 tiles known as the blocks (n tiles)
-   and the plinth (remaining tile);
+  and the plinth (remaining tile);
 * the plinth has its centre at position (x = 0, y = 0);
 * the blocks have y-coordinates greater than zero (so the plinth is the
-   unique lowest tile);
+  unique lowest tile);
 * the centre of mass of all the blocks, combined, has x-coordinate equal to zero.
 
 When counting the sculptures, any arrangements which are simply

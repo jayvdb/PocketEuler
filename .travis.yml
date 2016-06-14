@@ -8,3 +8,10 @@ script:
   - markdownlint -c ./.markdownlint.json README.md
   - touch package.json
   - remark --config=./.remarkrc.js --frail --no-stdout -u lint ./README.md
+  - remark ./README.md > ./README.md.new
+  - sed -i 's/&lt;/</g' README.md.new
+  - sed -i 's:\\\\:\\:g' README.md.new
+  - sed -i 's/&#x3A;/:/g' README.md.new
+  - sed -i 's/\\\*\\\*/**/;s/\\\*\([^*]*\)$/*\1/g' README.md.new
+  - mv README.md.new README.md
+  - git diff README.md
