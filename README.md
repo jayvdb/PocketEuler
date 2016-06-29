@@ -11007,7 +11007,7 @@ Fred is not amused and insists that it is removed from his property.
 Quick thinking Quentin explains that when granular materials are delivered
 from above a conical slope is formed and the natural angle made with the
 horizontal is called the angle of repose. For example if the angle of
-repose, <img src="files/p_431_eq_1.png" class="equation" data-expr="\alpha = 30" height="1em"/>
+repose, <img src="files/p_431_eq_1.gif" class="equation" data-expr="\alpha = 30"/>
 degrees, and grain is delivered at the centre of the
 silo then a perfect cone will form towards the top of the cylinder. In the
 case of this silo, which has a diameter of 6m, the amount of space wasted

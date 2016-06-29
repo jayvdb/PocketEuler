@@ -21,8 +21,7 @@ def extract_equations(raw):
 
 
 def create_svg(filename, maths):
-    sarge.run("tex2svg '{0}' > {1}".format(maths, filename.replace('.png', '.svg')))
-    sarge.run("convert '{0}' '{1}'".format(filename.replace('.png', '.svg'), filename))
+    sarge.run("mimetex '{0}' -o -e {1}".format(maths, filename))
 
 
 def main():
