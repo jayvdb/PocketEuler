@@ -1,5 +1,7 @@
 import codecs
 
+from collections import OrderedDict
+
 from bs4 import BeautifulSoup
 
 import sarge
@@ -18,7 +20,7 @@ def extract_equations(raw):
         for item in equation_tags
     )
 
-    if len(equations) != len(equation_tags):
+    if len(dict(equations)) != len(equation_tags):
         # A filename was repeated
         filenames = set(item[0] for item in equations)
         for filename in filenames:
@@ -30,11 +32,11 @@ def extract_equations(raw):
                     else:
                         equation = item[1]
 
-    return dict(equations)
+    return OrderedDict(equations)
 
 
 def create_svg(filename, maths):
-    sarge.run("mimetex '{0}' -o -e {1}".format(maths, filename))
+    sarge.run("mimetex '{0}' -o -e '{1}'".format(maths, filename))
 
 
 def main():

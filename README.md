@@ -8211,9 +8211,10 @@ So, in fact, we have just described an optimal strategy for n=8.
 Let C(n) be the worst-case cost achieved by an optimal strategy for n, as
 described above.
 Thus C(1) = 0, C(2) = 1, C(3) = 2 and C(8) = 12.
-Similarly, C(100) = 400 and ![](files/p_328_sum1.gif)C(n) = 17575.
+Similarly, C(100) = 400 and
+<img src="files/eq_328_1.gif" class="equation" data-expr="\sum_{n=1}^{100}C(n) = 17575"/>.
 
-Find ![](files/p_328_sum2.gif)C(n).
+Find <img src="files/eq_328_2.gif" class="equation" data-expr="\sum_{n=1}^{200000}C(n)"/>.
 
 Answer: 92a3220ad5b17a562c039e6e93d6df90
 
@@ -8332,7 +8333,8 @@ Let A(r) be the area of the smallest spherical triangle in T(r).
 
 For example A(14) is 3.294040 rounded to six decimal places.
 
-Find ![](files/p_332_sum.gif)A(r). Give your answer rounded to six decimal places.
+Find <img src="files/eq_332_1.gif" class="equation" data-expr="\sum_{r=1}^{50}A(r)"/>.
+Give your answer rounded to six decimal places.
 
 Answer: c2ae53ebfb15db373cfe5d71078ea1ca
 
@@ -8422,7 +8424,8 @@ Let M(x) represent the number of moves required to return to the initial
 situation, starting with x bowls. Thus, M(5) = 15. It can also be verified
 that M(100) = 10920.
 
-Find ![](files/p_335_sum.gif)M(2^k+1). Give your answer modulo 7^9.
+Find <img src="files/eq_335_1.gif" class="equation" data-expr="\sum_{k=0}^{10^18}M(2^k+1)"/>.
+Give your answer modulo 7^9.
 
 Answer: 9a519cfa0ebdd4d1dd318f14b5799eea
 
