@@ -11039,7 +11039,7 @@ it.
 
 If Quick thinking Quentin is to satisfy frustratingly fussy Fred the
 farmer's appetite for all things square then determine the values of _x_
-for all possible square space wastage options and calculate <big>Σ<big>_x_
+for all possible square space wastage options and calculate Σ_x_
 correct to 9 decimal places.
 
 Answer: 5e5d81aa8bfaf92f68cdef0154c5c238
