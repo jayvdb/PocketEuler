@@ -11012,17 +11012,20 @@ degrees, and grain is delivered at the centre of the
 silo then a perfect cone will form towards the top of the cylinder. In the
 case of this silo, which has a diameter of 6m, the amount of space wasted
 would be approximately 32.648388556 m^3. However, if grain is delivered at
-a point on the top which has a horizontal distance of $x$ metres from the
+a point on the top which has a horizontal distance of _x_ metres from the
 centre then a cone with a strangely curved and sloping base is formed. He
 shows Fred a picture.
 
 ![](files/p_431_grain_silo.png)
 
 We shall let the amount of space wasted in cubic metres be given by
-$V(x)$. If $x = 1.114785284$, which happens to have three squared decimal
-places, then the amount of space wasted, $V(1.114785284) \approx 36$.
+<img src="files/p_431_eq_2.gif" class="equation" data-expr="V(x)"/>.
+If _x_ = 1.114785284, which happens to have three squared decimal
+places, then the amount of space wasted,
+<img src="files/p_431_eq_3.gif" class="equation" data-expr="V(1.114785284) \approx 36"/>.
 Given the range of possible solutions to this problem there is exactly one
-other option: $V(2.511167869) \approx 49$. It would be like knowing that
+other option: <img src="files/p_431_eq_4.gif" class="equation" data-expr="V(2.511167869) \approx 49"/>.
+It would be like knowing that
 the square is king of the silo, sitting in splendid glory on top of your
 grain.
 
@@ -11035,8 +11038,8 @@ solutions for this particular silo then he will be more than happy to keep
 it.
 
 If Quick thinking Quentin is to satisfy frustratingly fussy Fred the
-farmer's appetite for all things square then determine the values of $x$
-for all possible square space wastage options and calculate $\sum x$
+farmer's appetite for all things square then determine the values of _x_
+for all possible square space wastage options and calculate <big>Σ<big>_x_
 correct to 9 decimal places.
 
 Answer: 5e5d81aa8bfaf92f68cdef0154c5c238

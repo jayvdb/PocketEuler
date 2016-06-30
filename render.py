@@ -13,11 +13,24 @@ def load_raw():
 def extract_equations(raw):
     soup = BeautifulSoup(raw, 'lxml')
     equation_tags = soup.find_all('img', class_="equation")
-    equations = dict(
+    equations = list(
         (item['src'], item['data-expr'])
         for item in equation_tags
     )
-    return equations
+
+    if len(equations) != len(equation_tags):
+        # A filename was repeated
+        filenames = set(item[0] for item in equations)
+        for filename in filenames:
+            equation = None
+            for item in equations:
+                if item[0] == filename:
+                    if equation:
+                        assert equation == item[1], "filename reused with different equation"
+                    else:
+                        equation = item[1]
+
+    return dict(equations)
 
 
 def create_svg(filename, maths):
@@ -29,6 +42,7 @@ def main():
     equations = extract_equations(f)
     for filename, maths in equations.items():
         create_svg(filename, maths)
+        print('created {0}'.format(filename))
 
 
 if __name__ == '__main__':
