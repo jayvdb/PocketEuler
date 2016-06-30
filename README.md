@@ -8424,7 +8424,7 @@ Let M(x) represent the number of moves required to return to the initial
 situation, starting with x bowls. Thus, M(5) = 15. It can also be verified
 that M(100) = 10920.
 
-Find <img src="files/eq_335_1.gif" class="equation" data-expr="\sum_{k=0}^{10^18}M(2^k+1)"/>.
+Find <img src="files/eq_335_1.gif" class="equation" data-expr="\sum_{k=0}^{10^{18}}M(2^k+1)"/>.
 Give your answer modulo 7^9.
 
 Answer: 9a519cfa0ebdd4d1dd318f14b5799eea
