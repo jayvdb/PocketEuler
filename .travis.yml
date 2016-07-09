@@ -16,4 +16,6 @@ script:
   - mdl -c ./.mdlrc README.md
   - markdownlint -c ./.markdownlint.json README.md
   - node $HOME/remark/packages/remark-cli/cli.js --config=./.remarkrc.js --frail --no-stdout -u remark-lint README.md
-  - node $HOME/remark/packages/remark-cli/cli.js --config=./.remarkrc.js --frail --no-stdout -u remark-validate-links README.md
+  - node $HOME/remark/packages/remark-cli/cli.js --frail --no-stdout -u remark-validate-links README.md
+  - rm ./.remarkrc.js
+  - node $HOME/remark/packages/remark-cli/cli.js --frail --no-stdout -u remark-lint README.md
